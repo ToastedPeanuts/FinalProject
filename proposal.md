@@ -9,17 +9,18 @@ This is very relevant to media and digital arts as it is a good building block f
 
 ## Features
 - Paths
-	- Players are given an initial option of 'Right' or 'Left' and given the option again
-   after the first encounter 
+	- Players are given an 2 options of 'Right' or 'Left', the initial and then the second after
+   	the initial conversation is done
 - Characters
-	- An image of the monster/character encountered will be visible while in that encounter
+	- An image of the monster/person encountered will be visible while in that encounter.
+   	-2 Monsters and 2 People
 - Input from Player
-	- Input a name to follow through game. Monsters/characters will address the player by name.
+	- Input a name to follow through game. Monsters/person will address the player by name.
 -Choices
-  -Choices made by the player will determine the ending. The endings are 'Good' and 'Bad'.
+  	-Choices made by the player will determine the ending. The endings are 'Good' and 'Bad'.
 - Randomized encounters
-  -Encounters randomized to be either friendly or hostile. Players can fight/talk the monsters
-  as well as the characters.
+ 	 -Encounters randomized to be either friendly or hostile. Players can fight/talk to the monsters
+  	as well as the people.
 
 (To attempt)
 -Create a music track to follow through game
@@ -54,13 +55,22 @@ Minimal Viable Outcome:
 ## Milestones
 
 - Week 1 - 11/12/23-11/19/23
-  1. Goal 1
-  2. Goal 2
+  1. Initilization of the game
+  2. Input from the player- Name & Paths
+  3. Basic display screen for the game
+  4. Set up structures for encounters with 5 characters
 
 - Week 2 - 11/19/23-11/26/23
-  1. Goal 1
-  2. Goal 2
+  1. Create friendly/hostile initial conversation for 4 characters
+  2. Create friendly/hostile responses for the player for 4 characters
+  3. Randomizing the initial conversations
+  4. Create an array for player actions
+  5. Create Final outcome conversation
 
 - Week 3 - 11/26/23-12/3/23 (DUE)
-  1. Goal 1
-  2. Goal 2
+  1. Connect all the paths together with inputs- Should correctly lead
+     to the final outcome
+  2. Display images on encounters
+  3. Animate text
+  4. (Add music)
+  5. (Different music based on encounters)
