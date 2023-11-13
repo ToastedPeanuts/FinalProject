@@ -1,7 +1,7 @@
 Small Adventures
 
 ## Repository
-<Link to your project's public GitHub respository>
+https://github.com/ToastedPeanuts/FinalProject.git
 
 ## Description
 I would like to create a small text adventure game that has has multiple routes/endings.
