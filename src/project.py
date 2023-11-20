@@ -18,4 +18,8 @@ def main():
 
 
 if __name__ == "__main__":
+    while True:
+        print("Hello there brave adventurer!")
+        print("You have decided to brave the dark and mysterious woods today")
+        
     main()
