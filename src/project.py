@@ -1,6 +1,20 @@
 import pygame
 import time
 
+def introScene():
+    anim_print("You come to a grove in the middle of the forest\n")
+    anim_print("There are two paths to take: Right or Left?\n")
+    anim_print("Which path will you take?\n")
+    
+def monsterOne():
+
+def monsterTwo():
+
+def personOne():
+
+def personTwo():
+
+def lastPerson():
 
 def draw_text(screen,text,font,text_col,x,y):
     img = font.render(text, True, text_col)
@@ -23,7 +37,8 @@ def main():
 
     running=True
     while running:
-        draw_text(imp,"Hello there brave adventurer!", text_font, (255,255,255), 400,420)
+        #draw_text(imp,"Hello there brave adventurer!", text_font, (255,255,255), 400,420)
+        introScene()
         for event in pygame.event.get():
             if event.type==pygame.QUIT:
                 running=False
