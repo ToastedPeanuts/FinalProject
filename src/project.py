@@ -21,8 +21,6 @@ def main():
                 running = False  
         #Game Logic:
         #Render and Display
-        screen.fill('Green')
-        pygame.flip()
     pygame.quit()
 
 

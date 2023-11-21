@@ -55,7 +55,7 @@ Minimal Viable Outcome:
 ## Milestones
 
 - Week 1 - 11/12/23-11/19/23
-  1. Initilization of the game
+  1. Initilization of the game X
   2. Input from the player- Name & Paths
   3. Basic display screen for the game
   4. Set up structures for encounters with 5 characters
