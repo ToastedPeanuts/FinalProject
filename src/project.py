@@ -1,6 +1,8 @@
 import pygame
 import time
 import random
+import keyboard
+import sys
 
 def introScene():
     anim_print("You come to a grove in the middle of the forest\n")
@@ -9,22 +11,22 @@ def introScene():
     direction = ["RIGHT", "LEFT", "BACKWARD", "ESCAPE"]
     userInput = ""
     while userInput not in direction:
-        print("Options: Right, Left, Backward, Escape\n")
+        anim_print("Options: Right, Left, Backward, Escape\n")
         userInput = input()
         capInput = userInput.upper()
         if capInput == "RIGHT":
-            print("You have chosen to go right\n")
-            monsterOne()
+            anim_print("You have chosen to go right\n")
+            #monsterOne()
         elif capInput == "LEFT":
-            print("You have chosen to go left\n")
-            personOne()
+            anim_print("You have chosen to go left\n")
+            #personOne()
         elif capInput == "BACKWARD":
-            print("Adventurers must face their fears, choose a direction\n")
+            anim_print("Adventurers must face their fears, choose a direction\n")
         elif capInput == "ESCAPE":
-            print("You have chosen to escape")
+            anim_print("You have chosen to escape")
             quit()
         else:
-            print("Please choose a direction\n")
+            anim_print("Please choose a direction\n")
 
 #def monsterOne():
 
@@ -45,7 +47,14 @@ def anim_print(text):
         print(character, end="", flush=True)
         time.sleep(0.1)
 
+def on_esc():
+    if keyboard.KeyboardEvent == keyboard.is_pressed("esc"):
+        print("escape was pressed")
+        quit()
+    
 def main():
+    running = True
+    while running:
     #pygame.init()
     #pygame.display.set_caption('Background')
     #resolution=(800,571)
@@ -54,7 +63,8 @@ def main():
     #screen.blit(imp,(0,0))
     #pygame.display.flip()
     #text_font=pygame.font.SysFont("Arial", 30)
-    introScene()
+        introScene()
+
 
     #running=True
     #while running:
