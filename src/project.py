@@ -9,26 +9,28 @@ def introScene():
     direction = ["right", "left"]
     userInput = ""
     while userInput not in direction:
-        anim_print("Right or Left?")
+        anim_print("Right or Left?\n")
         userInput = input().capitalize
-        if userInput == "RIGHT":
+        if userInput == "Right":
             monsterOne()
-        elif userInput == "LEFT":
+        elif userInput == "Left":
             personOne()
-        elif userInput == "BACKWARD":
-            anim_print("Adventurers must face their fears, choose a direction")
+        elif userInput == "Backward":
+            anim_print("Adventurers must face their fears, choose a direction\n")
+        elif userInput == "Escape":
+            quit()
         else:
-            anim_print("Please choose a direction")
+            anim_print("Please choose a direction\n")
 
-def monsterOne():
+#def monsterOne():
 
-def monsterTwo():
+#def monsterTwo():
 
-def personOne():
+#def personOne():
 
-def personTwo():
+#def personTwo():
 
-def lastPerson():
+#def lastPerson():
 
 def draw_text(screen,text,font,text_col,x,y):
     img = font.render(text, True, text_col)
@@ -48,11 +50,11 @@ def main():
     screen.blit(imp,(0,0))
     pygame.display.flip()
     text_font=pygame.font.SysFont("Arial", 30)
+    introScene()
 
     running=True
     while running:
         #draw_text(imp,"Hello there brave adventurer!", text_font, (255,255,255), 400,420)
-        introScene()
         for event in pygame.event.get():
             if event.type==pygame.QUIT:
                 running=False
