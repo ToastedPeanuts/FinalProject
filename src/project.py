@@ -6,23 +6,26 @@ def introScene():
     print("You come to a grove in the middle of the forest\n")
     print("There are two paths to take: Right or Left?\n")
     print("Which path will you take?\n")
-    direction = ["Right", "Left", "Backward", "Escape"]
+    direction = ["RIGHT", "LEFT", "BACKWARD", "ESCAPE"]
     userInput = ""
     while userInput not in direction:
         print("Right or Left?\n")
         userInput = input()
-        if userInput == "Right":
+        capInput = userInput.upper()
+        if capInput == "RIGHT":
             #monsterOne()
             print("You have chosen to go right\n")
-        elif userInput == "Left":
+        elif capInput == "LEFT":
             #personOne()
             print("You have chosen to go left\n")
-        elif userInput == "Backward":
+        elif capInput == "BACKWARD":
             print("Adventurers must face their fears, choose a direction\n")
-        elif userInput == "Escape":
+        elif capInput == "ESCAPE":
+            print("You have chosen to escape")
             quit()
         else:
-            print("Please choose a direction\n")
+            quit()
+            #print("Please choose a direction\n")
 
 #def monsterOne():
 
