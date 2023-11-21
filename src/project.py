@@ -3,29 +3,28 @@ import time
 import random
 
 def introScene():
-    print("You come to a grove in the middle of the forest\n")
-    print("There are two paths to take: Right or Left?\n")
-    print("Which path will you take?\n")
+    anim_print("You come to a grove in the middle of the forest\n")
+    anim_print("There are multiple paths you can take\n")
+    anim_print("Which path will you take?\n")
     direction = ["RIGHT", "LEFT", "BACKWARD", "ESCAPE"]
     userInput = ""
     while userInput not in direction:
-        print("Right or Left?\n")
+        print("Options: Right, Left, Backward, Escape\n")
         userInput = input()
         capInput = userInput.upper()
         if capInput == "RIGHT":
-            #monsterOne()
             print("You have chosen to go right\n")
+            monsterOne()
         elif capInput == "LEFT":
-            #personOne()
             print("You have chosen to go left\n")
+            personOne()
         elif capInput == "BACKWARD":
             print("Adventurers must face their fears, choose a direction\n")
         elif capInput == "ESCAPE":
             print("You have chosen to escape")
             quit()
         else:
-            quit()
-            #print("Please choose a direction\n")
+            print("Please choose a direction\n")
 
 #def monsterOne():
 
