@@ -57,8 +57,8 @@ Minimal Viable Outcome:
 - Week 1 - 11/12/23-11/19/23
   1. Initilization of the game X
   2. Input from the player- Name & Paths
-  3. Basic display screen for the game
-  4. Set up structures for encounters with 5 characters
+  3. Basic display screen for the game X
+  4. Set up structures for encounters with 5 characters X
 
 - Week 2 - 11/19/23-11/26/23
   1. Create friendly/hostile initial conversation for 4 characters

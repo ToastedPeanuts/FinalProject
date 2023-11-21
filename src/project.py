@@ -1,11 +1,25 @@
 import pygame
 import time
+import random
 
 def introScene():
     anim_print("You come to a grove in the middle of the forest\n")
     anim_print("There are two paths to take: Right or Left?\n")
     anim_print("Which path will you take?\n")
-    
+    direction = ["right", "left"]
+    userInput = ""
+    while userInput not in direction:
+        anim_print("Right or Left?")
+        userInput = input().capitalize
+        if userInput == "RIGHT":
+            monsterOne()
+        elif userInput == "LEFT":
+            personOne()
+        elif userInput == "BACKWARD":
+            anim_print("Adventurers must face their fears, choose a direction")
+        else:
+            anim_print("Please choose a direction")
+
 def monsterOne():
 
 def monsterTwo():
