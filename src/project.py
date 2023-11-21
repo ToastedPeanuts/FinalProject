@@ -4,7 +4,23 @@ import random
 import keyboard
 import os
 
+def draw_text(screen,text,font,text_col,x,y):
+    img = font.render(text, True, text_col)
+    screen.blit(img,(x,y))
+
+def anim_print(text):
+    for character in text:
+        print(character, end="", flush=True)
+        time.sleep(0.1)
+
+def exit_on_key(keyname):
+    def callback(event):
+        if event.name == keyname:
+            os._exit(1)
+    return callback
+
 def introScene():
+
     print("You come to a grove in the middle of the forest\n")
     print("There are multiple paths you can take\n")
     print("Which path will you take?\n")
@@ -29,9 +45,11 @@ def introScene():
             print("Please choose a direction\n")
 
 def monsterOne():
-    print("--Text to add--\n")
-    print("--Text to add--\n")
-    print("--Text to add--\n")
+    attitude= random.randrange(0,1)
+    if attitude == 0:
+        print("Friendly\n")
+    elif attitude == 1:
+        print("Hostile\n")
     direction = ["RIGHT", "LEFT", "BACKWARD", "ESCAPE"]
     userInput = ""
     while userInput not in direction:
@@ -120,21 +138,6 @@ def personTwo():
 
 def lastPerson():
     print("--Text to add--\n")
-
-def draw_text(screen,text,font,text_col,x,y):
-    img = font.render(text, True, text_col)
-    screen.blit(img,(x,y))
-
-def anim_print(text):
-    for character in text:
-        print(character, end="", flush=True)
-        time.sleep(0.1)
-
-def exit_on_key(keyname):
-    def callback(event):
-        if event.name == keyname:
-            os._exit(1)
-    return callback
 
 def main():
     running = True
