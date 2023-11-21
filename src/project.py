@@ -1,6 +1,11 @@
 import pygame
 import time
 
+def anim_print(text):
+    for character in text:
+        print(character, end="", flush=True)
+        time.sleep(0.1)
+
 def main():
     pygame.init()
     pygame.display.set_caption('Character')
@@ -23,7 +28,9 @@ def main():
 
 if __name__ == "__main__":
     while True:
-        print("Hello there brave adventurer!")
-        print("You have decided to brave the dark and mysterious woods today")
-
-    main()
+        anim_print("Hello there brave adventurer!\n")
+        anim_print("You have decided to brave the dark and mysterious woods today\n")
+        anim_print("What is your name traveler?\n")
+        name = input()
+        anim_print(f'Good luck {name}, travel safely!\n')
+        main()
