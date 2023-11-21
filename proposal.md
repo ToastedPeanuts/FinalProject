@@ -56,7 +56,7 @@ Minimal Viable Outcome:
 
 - Week 1 - 11/12/23-11/19/23
   1. Initilization of the game X
-  2. Input from the player- Name & Paths
+  2. Input from the player- Name & Paths X
   3. Basic display screen for the game X
   4. Set up structures for encounters with 5 characters X
 
@@ -71,6 +71,6 @@ Minimal Viable Outcome:
   1. Connect all the paths together with inputs- Should correctly lead
      to the final outcome
   2. Display images on encounters
-  3. Animate text
+  3. Animate text X
   4. (Add music)
   5. (Different music based on encounters)

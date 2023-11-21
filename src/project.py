@@ -120,7 +120,6 @@ def personTwo():
 
 def lastPerson():
     print("--Text to add--\n")
-    print("--Text to add--\n")
 
 def draw_text(screen,text,font,text_col,x,y):
     img = font.render(text, True, text_col)
@@ -164,7 +163,6 @@ def main():
         #Game Logic:
         #Render and Display
     #pygame.quit()
-
 
 if __name__ == "__main__":
     #anim_print("Hello there brave adventurer!\n")
