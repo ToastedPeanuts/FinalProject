@@ -16,10 +16,10 @@ def introScene():
         capInput = userInput.upper()
         if capInput == "RIGHT":
             print("You have chosen to go right\n")
-            #monsterOne()
+            monsterOne()
         elif capInput == "LEFT":
             print("You have chosen to go left\n")
-            #personOne()
+            personOne()
         elif capInput == "BACKWARD":
             print("Adventurers must face their fears, choose a direction\n")
         elif capInput == "ESCAPE":
@@ -28,15 +28,99 @@ def introScene():
         else:
             print("Please choose a direction\n")
 
-#def monsterOne():
+def monsterOne():
+    print("--Text to add--\n")
+    print("--Text to add--\n")
+    print("--Text to add--\n")
+    direction = ["RIGHT", "LEFT", "BACKWARD", "ESCAPE"]
+    userInput = ""
+    while userInput not in direction:
+        print("Options: Right, Left, Backward, Escape\n")
+        userInput = input()
+        capInput = userInput.upper()
+        if capInput == "RIGHT":
+            print("You have chosen to go right\n")
+            personTwo()
+        elif capInput == "LEFT":
+            print("You have chosen to go left\n")
+            monsterTwo()
+        elif capInput == "BACKWARD":
+            print("Adventurers must face their fears, choose a direction\n")
+        elif capInput == "ESCAPE":
+            print("You have chosen to escape")
+            quit()
+        else:
+            print("Please choose a direction\n")
 
-#def monsterTwo():
+def monsterTwo():
+    print("--Text to add--\n")
+    print("--Text to add--\n")
+    print("--Text to add--\n")
+    direction = ["FORWARD", "BACKWARD", "ESCAPE"]
+    userInput = ""
+    while userInput not in direction:
+        print("Options: Forward, Backward, Escape\n")
+        userInput = input()
+        capInput = userInput.upper()
+        if capInput == "FORWARD":
+            print("You have chosen to go forward\n")
+            lastPerson()
+        elif capInput == "BACKWARD":
+            print("Adventurers must face their fears, choose a direction\n")
+        elif capInput == "ESCAPE":
+            print("You have chosen to escape")
+            quit()
+        else:
+            print("Please choose a direction\n")
 
-#def personOne():
+def personOne():
+    print("--Text to add--\n")
+    print("--Text to add--\n")
+    print("--Text to add--\n")
+    direction = ["RIGHT", "LEFT", "BACKWARD", "ESCAPE"]
+    userInput = ""
+    while userInput not in direction:
+        print("Options: Right, Left, Backward, Escape\n")
+        userInput = input()
+        capInput = userInput.upper()
+        if capInput == "RIGHT":
+            print("You have chosen to go right\n")
+            personTwo()
+        elif capInput == "LEFT":
+            print("You have chosen to go left\n")
+            monsterTwo()
+        elif capInput == "BACKWARD":
+            print("Adventurers must face their fears, choose a direction\n")
+        elif capInput == "ESCAPE":
+            print("You have chosen to escape")
+            quit()
+        else:
+            print("Please choose a direction\n")
 
-#def personTwo():
+def personTwo():
+    print("--Text to add--\n")
+    print("--Text to add--\n")
+    print("--Text to add--\n")
+    direction = ["FORWARD", "BACKWARD", "ESCAPE"]
+    userInput = ""
+    while userInput not in direction:
+        print("Options: Forward, Backward, Escape\n")
+        userInput = input()
+        capInput = userInput.upper()
+        if capInput == "FORWARD":
+            print("You have chosen to go forward\n")
+            lastPerson()
+        elif capInput == "BACKWARD":
+            print("Adventurers must face their fears, choose a direction\n")
+        elif capInput == "ESCAPE":
+            print("You have chosen to escape")
+            quit()
+        else:
+            print("Please choose a direction\n")
 
-#def lastPerson():
+def lastPerson():
+    print("--Text to add--\n")
+    print("--Text to add--\n")
 
 def draw_text(screen,text,font,text_col,x,y):
     img = font.render(text, True, text_col)
