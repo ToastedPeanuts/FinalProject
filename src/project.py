@@ -1,6 +1,12 @@
 import pygame
 import time
 
+
+def draw_text(screen,text,font,text_col,x,y):
+    img = font.render(text, True, text_col)
+    screen.blit(img,(x,y))
+    text_font=pygame.font.SysFont("Arial", 30)
+
 def anim_print(text):
     for character in text:
         print(character, end="", flush=True)
@@ -9,11 +15,13 @@ def anim_print(text):
 def main():
     pygame.init()
     pygame.display.set_caption('Background')
-    resolution=(1500,1000)
+    resolution=(800,571)
     screen=pygame.display.set_mode(resolution)
-    imp = pygame.image.load("Darkwoods.jpeg")
+    imp = pygame.image.load("DarkWoods.png")
     screen.blit(imp,(0,0))
     pygame.display.flip()
+
+    
     running=True
     while running:
         for event in pygame.event.get():
