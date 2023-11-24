@@ -21,20 +21,25 @@ def exit_on_key(keyname):
 
 def introScene():
 
-    print("You come to a grove in the middle of the forest\n")
-    print("There are multiple paths you can take\n")
-    print("Which path will you take?\n")
+    anim_print("You come to a grove in the middle of the forest\n")
+    anim_print("          \n")
+    anim_print("There are multiple paths you can take\n")
+    anim_print("          \n")
+    anim_print("Which path will you take?\n")
+    anim_print("          \n")
     direction = ["RIGHT", "LEFT", "BACKWARD", "ESCAPE"]
     userInput = ""
     while userInput not in direction:
-        print("Options: Right, Left, Backward, Escape\n")
+        anim_print("Options: Right, Left, Backward, Escape\n")
         userInput = input()
         capInput = userInput.upper()
         if capInput == "RIGHT":
             print("You have chosen to go right\n")
+            print("          \n")
             monsterOne()
         elif capInput == "LEFT":
             print("You have chosen to go left\n")
+            print("          \n")
             personOne()
         elif capInput == "BACKWARD":
             print("Adventurers must face their fears, choose a direction\n")
@@ -47,6 +52,7 @@ def introScene():
 def monsterOne():
     attitude= random.randrange(0,1)
     if attitude == 0:
+        # Friendly response
         print("Friendly\n")
     elif attitude == 1:
         print("Hostile\n")
@@ -173,5 +179,7 @@ if __name__ == "__main__":
     #anim_print("What is your name traveler?\n")
     #name = input()
     #anim_print(f'Good luck {name}, travel safely!\n')
+    #anim_print("          \n")
+    #anim_print("          \n")
     keyboard.hook(exit_on_key('esc'))
     main()
