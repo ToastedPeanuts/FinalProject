@@ -34,44 +34,52 @@ def introScene():
         userInput = input()
         capInput = userInput.upper()
         if capInput == "RIGHT":
-            print("You have chosen to go right\n")
-            print("          \n")
+            anim_print("You have chosen to go right\n")
+            anim_print("          \n")
             monsterOne()
         elif capInput == "LEFT":
-            print("You have chosen to go left\n")
-            print("          \n")
+            anim_print("You have chosen to go left\n")
+            anim_print("          \n")
             personOne()
         elif capInput == "BACKWARD":
-            print("Adventurers must face their fears, choose a direction\n")
+            anim_print("Adventurers must face their fears, choose a direction\n")
+            anim_print("          \n")
         elif capInput == "ESCAPE":
-            print("You have chosen to escape")
+            anim_print("You have chosen to escape")
+            anim_print("          \n")
             quit()
         else:
-            print("Please choose a direction\n")
+            anim_print("Please choose a direction\n")
+            anim_print("          \n")
 
 def monsterOne():
     attitude= random.randrange(0,1)
     if attitude == 0:
         # Friendly response
-        print("Friendly\n")
+        anim_print("Friendly\n")
     elif attitude == 1:
+        # Hostile response
         print("Hostile\n")
     direction = ["RIGHT", "LEFT", "BACKWARD", "ESCAPE"]
     userInput = ""
     while userInput not in direction:
-        print("Options: Right, Left, Backward, Escape\n")
+        anim_print("Options: Right, Left, Backward, Escape\n")
         userInput = input()
         capInput = userInput.upper()
         if capInput == "RIGHT":
-            print("You have chosen to go right\n")
+            anim_print("You have chosen to go right\n")
+            anim_print("          \n")
             personTwo()
         elif capInput == "LEFT":
-            print("You have chosen to go left\n")
+            anim_print("You have chosen to go left\n")
+            anim_print("          \n")
             monsterTwo()
         elif capInput == "BACKWARD":
-            print("Adventurers must face their fears, choose a direction\n")
+            anim_print("Adventurers must face their fears, choose a direction\n")
+            anim_print("          \n")
         elif capInput == "ESCAPE":
-            print("You have chosen to escape")
+            anim_print("You have chosen to escape")
+            anim_print("          \n")
             quit()
         else:
             print("Please choose a direction\n")
