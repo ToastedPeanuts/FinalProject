@@ -56,7 +56,8 @@ def monsterOne():
     attitude= random.randrange(0,1)
     if attitude == 0:
         # Friendly response
-        anim_print("Friendly\n")
+        anim_print("Welcome to the woods {name}!\n")
+        anim_print("\n")
     elif attitude == 1:
         # Hostile response
         print("Hostile\n")
