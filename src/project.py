@@ -23,7 +23,8 @@ def introScene():
 
     anim_print("You come to a grove in the middle of the forest\n")
     anim_print("          \n")
-    anim_print("There are multiple paths you can take\n")
+    anim_print("There are multiple paths you can take; Right, Left,\n")
+    anim_print("Backwards, and Escape\n")
     anim_print("          \n")
     anim_print("Which path will you take?\n")
     anim_print("          \n")
@@ -56,7 +57,7 @@ def monsterOne():
     attitude= random.randrange(0,1)
     if attitude == 0:
         # Friendly response
-        anim_print("Welcome to the woods {name}!\n")
+        anim_print(f"Welcome to the woods {name}!\n")
         anim_print("What are you doing so deep in these dangerous woods?\n")
         anim_print("          \n")
         responses = ["1","2"]
@@ -64,15 +65,16 @@ def monsterOne():
         while userInput not in responses:
             anim_print("Option 1: Just peacefully adventuring through\n")
             anim_print("Option 2: None of your business monster!\n")
-            anim_print("Options: 1 or 2?\n")
+            anim_print("How will you respond?\n")
+            anim_print("1 or 2?\n")
             userInput = input()
-            capInput = userInput.Upper()
+            capInput = userInput
             if capInput == "1":
-                anim_print("Well on your way {name}, travel safely!")
+                anim_print(f"Well on your way {name}, travel safely!\n")
             elif capInput == "2":
-                anim_print("*GROWL* Better move along before you lose your life human.")
+                anim_print("*GROWL* Better move along before you lose your life human.\n")
             else:
-                anim_print("Please choose and option")
+                anim_print("Please choose and option\n")
     elif attitude == 1:
         # Hostile response
         print("Hostile\n")
@@ -198,12 +200,15 @@ def main():
     #pygame.quit()
 
 if __name__ == "__main__":
-    #anim_print("Hello there brave adventurer!\n")
-    #anim_print("You have decided to brave the dark and mysterious woods today\n")
-    #anim_print("What is your name traveler?\n")
-    #name = input()
-    #anim_print(f'Good luck {name}, travel safely!\n')
-    #anim_print("          \n")
-    #anim_print("          \n")
+    anim_print("Hello there brave adventurer!\n")
+    anim_print("You have decided to venture through\n")
+    anim_print("the dark and mysterious woods today.\n")
+    anim_print("There is rumoured to be a magician that will reward you with riches!\n")
+    anim_print("What is your name traveler?\n")
+    global name
+    name = input()
+    anim_print(f'Good luck {name}, travel safely!\n')
+    anim_print("          \n")
+    anim_print("          \n")
     keyboard.hook(exit_on_key('esc'))
     main()
