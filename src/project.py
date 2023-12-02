@@ -129,17 +129,22 @@ def monsterOne():
             anim_print("You have chosen to go right\n")
             anim_print("          \n")
             personTwo()
+
         elif capInput == "LEFT":
             anim_print("You have chosen to go left\n")
             anim_print("          \n")
             monsterTwo()
+
         elif capInput == "BACKWARD":
-            anim_print("Adventurers must face their fears, choose a direction\n")
+            anim_print("The monster would not be very happy to see you again.\n")
+            anim_print("Choose a different direction.\n")
             anim_print("          \n")
+
         elif capInput == "ESCAPE":
             anim_print("You have chosen to escape")
             anim_print("          \n")
             quit()
+            
         else:
             print("Please choose a direction\n")
 
@@ -179,7 +184,7 @@ def monsterTwo():
         capInput = userInput.upper()
         if capInput == "FORWARD":
             print("You have chosen to go forward\n")
-            lastPerson()
+            magician()
         elif capInput == "BACKWARD":
             print("Adventurers must face their fears, choose a direction\n")
         elif capInput == "ESCAPE":
@@ -224,7 +229,7 @@ def personTwo():
         capInput = userInput.upper()
         if capInput == "FORWARD":
             print("You have chosen to go forward\n")
-            lastPerson()
+            magician()
         elif capInput == "BACKWARD":
             print("Adventurers must face their fears, choose a direction\n")
         elif capInput == "ESCAPE":
@@ -233,7 +238,7 @@ def personTwo():
         else:
             print("Please choose a direction\n")
 
-def lastPerson():
+def magician():
     print("--Text to add--\n")
 
 def main():
@@ -266,13 +271,15 @@ def main():
 
 if __name__ == "__main__":
     keyboard.hook(exit_on_key('esc'))
-    anim_print("What is your name traveler?\n")
+    anim_print("What is your name?\n")
     global name
-    name = input()
+    name = input().upper
     anim_print(f"Hello there {name}!\n")
+    anim_print("          \n")
     anim_print("You are a well known traveler and today you have decided to venture through\n")
-    anim_print("the dark and mysterious woods today.\n")
-    anim_print("There is a rumour that there is a magician that will reward you with riches!\n")
+    anim_print("the dark and mysterious woods.\n")
+    anim_print("There is a rumor that a magician resides there\n")
+    anim_print("and will reward you with riches if you find him!")
     anim_print("          \n")
     anim_print(f'Good luck on your quest {name}, stick to the path!\n')
     anim_print("          \n")
