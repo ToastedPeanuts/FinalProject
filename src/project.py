@@ -151,17 +151,18 @@ def monsterOne():
 def monsterTwo():
     attitude= random.randrange(0,1)
     if attitude == 0:
-        # Friendly response from Monster 1
-        anim_print(f"Monster1: Welcome to the woods {name}!\n")
-        anim_print("What are you doing so deep in these dangerous woods?\n")
+        # Friendly response from Monster 2
+        anim_print("A human! These woods are not safe for someone like you!\n")
+        anim_print("Perhaps you should turn back?\n")
         anim_print("          \n")
         responses = ["1","2"]
         userInput = ""
         while userInput not in responses:
-            anim_print("Option 1: Just peacefully adventuring through\n")
+            anim_print("Option 1: I will be okay, thank you for your concern.\n")
             anim_print("          \n")
 
-            anim_print("Option 2: None of your business monster!\n")
+            anim_print("Option 2: No monster is going to tell me what to do.\n")
+            anim_print("Get out of my way!")
             anim_print("          \n")
 
             anim_print("How will you respond?\n")
@@ -181,8 +182,7 @@ def monsterTwo():
 
     elif attitude == 1:
         # Hostile response from Monster 1
-        anim_print(f"Monster1: What is a pathetic human like you doing\n")
-        anim_print("is a place like this?\n")
+        anim_print(f"Monster1: Wonderful! My evening meal has come to me!\n")
         anim_print("          \n")
         responses = ["1","2"]
         userInput = ""
@@ -311,7 +311,7 @@ if __name__ == "__main__":
     keyboard.hook(exit_on_key('esc'))
     anim_print("What is your name?\n")
     global name
-    name = input().upper
+    name = input().upper()
     anim_print(f"Hello there {name}!\n")
     anim_print("          \n")
     anim_print("You are a well known traveler and today you have decided to venture through\n")
