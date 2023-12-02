@@ -144,38 +144,76 @@ def monsterOne():
             anim_print("You have chosen to escape")
             anim_print("          \n")
             quit()
-            
+
         else:
             print("Please choose a direction\n")
 
 def monsterTwo():
-    print("--Text to add--\n")
-    print("--Text to add--\n")
-    print("--Text to add--\n")
     attitude= random.randrange(0,1)
     if attitude == 0:
-        # Friendly response
-        anim_print(f"Welcome to the woods {name}!\n")
+        # Friendly response from Monster 1
+        anim_print(f"Monster1: Welcome to the woods {name}!\n")
         anim_print("What are you doing so deep in these dangerous woods?\n")
         anim_print("          \n")
         responses = ["1","2"]
         userInput = ""
         while userInput not in responses:
-            anim_print("Option 1: *Peaceful Response*\n")
-            anim_print("Option 2: *Hostile Response*\n")
+            anim_print("Option 1: Just peacefully adventuring through\n")
+            anim_print("          \n")
+
+            anim_print("Option 2: None of your business monster!\n")
+            anim_print("          \n")
+
+            anim_print("How will you respond?\n")
+            anim_print("1 or 2?\n")
+
+            userInput = input()
+            capInput = userInput
+            if capInput == "1":
+                anim_print(f"Monster1: Be on your way {name}, travel safely!\n")
+                anim_print("          \n")
+            elif capInput == "2":
+                anim_print("Monster1:*GROWL* Better move along before you lose your life human.\n")
+                anim_print("          \n")
+            else:
+                anim_print("Please choose an option\n")
+
+
+    elif attitude == 1:
+        # Hostile response from Monster 1
+        anim_print(f"Monster1: What is a pathetic human like you doing\n")
+        anim_print("is a place like this?\n")
+        anim_print("          \n")
+        responses = ["1","2"]
+        userInput = ""
+        while userInput not in responses:
+            anim_print("Option 1: Just peacefully adventuring through")
+            anim_print("I'm not looking for any trouble\n")
+            anim_print("          \n")
+
+            anim_print("Option 2: None of your business monster!\n")
+            anim_print("Now move out of the way before I take your head as my prize.\n")
+            anim_print("          \n")
+    
             anim_print("How will you respond?\n")
             anim_print("1 or 2?\n")
             userInput = input()
             capInput = userInput
             if capInput == "1":
-                anim_print(f"Well on your way {name}, travel safely!\n")
+                anim_print("The monster stares straight at you, almost as if\n")
+                anim_print("he was reading your mind.")
+                anim_print(f"Monster1: Move quickly through before I change my mind\n")
+
             elif capInput == "2":
-                anim_print("*GROWL* Better move along before you lose your life human.\n")
+                anim_print("The monster huffs and steps forward but quickly stops\n")
+                anim_print("almost as if he is assessing if you really mean what you say.")
+                anim_print("Monster1: *GROWL* Better move along before you lose your life human.\n")
+                anim_print("You quickly move though, not wanting to test if he\n")
+                anim_print("is true to his word.")
+
             else:
-                anim_print("Please choose and option\n")
-    elif attitude == 1:
-        # Hostile response
-        print("Hostile\n")
+                anim_print("Please choose an option\n")
+
     direction = ["FORWARD", "BACKWARD", "ESCAPE"]
     userInput = ""
     while userInput not in direction:
