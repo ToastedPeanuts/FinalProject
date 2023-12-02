@@ -97,9 +97,17 @@ def monsterOne():
             userInput = input()
             capInput = userInput
             if capInput == "1":
-                anim_print(f"Well on your way {name}, travel safely!\n")
+                anim_print("The monster stares straight at you, almost as if\n")
+                anim_print("he was reading your mind.")
+                anim_print(f"Monster1: Move quickly through before I change my mind\n")
+
             elif capInput == "2":
-                anim_print("*GROWL* Better move along before you lose your life human.\n")
+                anim_print("The monster huffs and steps forward but quickly stops\n")
+                anim_print("almost as if he is assessing if you really mean what you say.")
+                anim_print("Monster1: *GROWL* Better move along before you lose your life human.\n")
+                anim_print("You quickly move though, not wanting to test if he\n")
+                anim_print("is true to his word.")
+
             else:
                 anim_print("Please choose and option\n")
     direction = ["RIGHT", "LEFT", "BACKWARD", "ESCAPE"]
