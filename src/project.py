@@ -57,7 +57,22 @@ def monsterOne():
     if attitude == 0:
         # Friendly response
         anim_print("Welcome to the woods {name}!\n")
-        anim_print("\n")
+        anim_print("What are you doing so deep in these dangerous woods?\n")
+        anim_print("          \n")
+        responses = ["1","2"]
+        userInput = ""
+        while userInput not in responses:
+            anim_print("Option 1: Just peacefully adventuring through\n")
+            anim_print("Option 2: None of your business monster!\n")
+            anim_print("Options: 1 or 2?\n")
+            userInput = input()
+            capInput = userInput.Upper()
+            if capInput == "1":
+                anim_print("Well on your way {name}, travel safely!")
+            elif capInput == "2":
+                anim_print("*GROWL* Better move along before you lose your life human.")
+            else:
+                anim_print("Please choose and option")
     elif attitude == 1:
         # Hostile response
         print("Hostile\n")
