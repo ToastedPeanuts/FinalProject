@@ -65,19 +65,25 @@ def monsterOne():
         while userInput not in responses:
             anim_print("Option 1: Just peacefully adventuring through\n")
             anim_print("          \n")
+
             anim_print("Option 2: None of your business monster!\n")
             anim_print("          \n")
+
             anim_print("How will you respond?\n")
             anim_print("1 or 2?\n")
+
             userInput = input()
             capInput = userInput
             if capInput == "1":
-                anim_print(f"Monster1: Well on your way {name}, travel safely!\n")
+                anim_print(f"Monster1: Be on your way {name}, travel safely!\n")
                 anim_print("          \n")
             elif capInput == "2":
                 anim_print("Monster1:*GROWL* Better move along before you lose your life human.\n")
+                anim_print("          \n")
             else:
-                anim_print("Please choose and option\n")
+                anim_print("Please choose an option\n")
+
+
     elif attitude == 1:
         # Hostile response from Monster 1
         anim_print(f"Monster1: What is a pathetic human like you doing\n")
@@ -89,9 +95,11 @@ def monsterOne():
             anim_print("Option 1: Just peacefully adventuring through")
             anim_print("I'm not looking for any trouble\n")
             anim_print("          \n")
+
             anim_print("Option 2: None of your business monster!\n")
             anim_print("Now move out of the way before I take your head as my prize.\n")
             anim_print("          \n")
+    
             anim_print("How will you respond?\n")
             anim_print("1 or 2?\n")
             userInput = input()
@@ -109,7 +117,8 @@ def monsterOne():
                 anim_print("is true to his word.")
 
             else:
-                anim_print("Please choose and option\n")
+                anim_print("Please choose an option\n")
+
     direction = ["RIGHT", "LEFT", "BACKWARD", "ESCAPE"]
     userInput = ""
     while userInput not in direction:
