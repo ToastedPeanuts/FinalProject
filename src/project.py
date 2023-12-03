@@ -77,9 +77,13 @@ def monsterOne():
             if capInput == "1":
                 anim_print(f"Monster1: Be on your way {name}, travel safely!\n")
                 anim_print("          \n")
+                ending.append("0")
+
             elif capInput == "2":
                 anim_print("Monster1:*GROWL* Better move along before you lose your life human.\n")
                 anim_print("          \n")
+                ending.append("1")
+
             else:
                 anim_print("Please choose an option\n")
 
@@ -105,16 +109,20 @@ def monsterOne():
             userInput = input()
             capInput = userInput
             if capInput == "1":
+                # Friendly response from Player
                 anim_print("The monster stares straight at you, almost as if\n")
                 anim_print("he was reading your mind.")
                 anim_print(f"Monster1: Move quickly through before I change my mind\n")
+                ending.append("0")
 
             elif capInput == "2":
+                # Hostile response from Player
                 anim_print("The monster huffs and steps forward but quickly stops\n")
                 anim_print("almost as if he is assessing if you really mean what you say.")
                 anim_print("Monster1: *GROWL* Better move along before you lose your life human.\n")
                 anim_print("You quickly move though, not wanting to test if he\n")
                 anim_print("is true to his word.")
+                ending.append("1")
 
             else:
                 anim_print("Please choose an option\n")
@@ -315,7 +323,7 @@ def main():
 if __name__ == "__main__":
     keyboard.hook(exit_on_key('esc'))
     global ending
-    ending = ["0","0","0","0"]
+    ending = []
     anim_print("What is your name?\n")
     global name
     name = input().upper()
