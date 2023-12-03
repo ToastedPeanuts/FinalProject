@@ -135,7 +135,8 @@ def monsterOne():
     direction = ["RIGHT", "LEFT", "BACKWARD", "ESCAPE"]
     userInput = ""
     while userInput not in direction:
-        anim_print("Options: Right, Left, Backward, Escape\n")
+        anim_print("There are multiple paths you can take; Right, Left,\n")
+        anim_print("Backwards, and Escape\n")
         userInput = input()
         capInput = userInput.upper()
         if capInput == "RIGHT":
@@ -247,7 +248,8 @@ def monsterTwo():
     direction = ["FORWARD", "BACKWARD", "ESCAPE"]
     userInput = ""
     while userInput not in direction:
-        anim_print("Options: Forward, Backward, Escape\n")
+        anim_print("There is only a couple ways to go from here\n")
+        anim_print("Forward, Backward, Escape\n")
         userInput = input()
         capInput = userInput.upper()
         if capInput == "FORWARD":
@@ -337,43 +339,112 @@ def personOne():
     direction = ["RIGHT", "LEFT", "BACKWARD", "ESCAPE"]
     userInput = ""
     while userInput not in direction:
-        print("Options: Right, Left, Backward, Escape\n")
+        anim_print("Which way will you go? Right, Left, Backward, Escape\n")
         userInput = input()
         capInput = userInput.upper()
         if capInput == "RIGHT":
-            print("You have chosen to go right\n")
+            anim_print("You have chosen to go right\n")
             personTwo()
         elif capInput == "LEFT":
-            print("You have chosen to go left\n")
+            anim_print("You have chosen to go left\n")
             monsterTwo()
         elif capInput == "BACKWARD":
-            print("Adventurers must face their fears, choose a direction\n")
+            anim_print("Adventurers must face their fears, choose a direction\n")
         elif capInput == "ESCAPE":
-            print("You have chosen to escape")
+            anim_print("You have chosen to escape")
             quit()
         else:
-            print("Please choose a direction\n")
+            anim_print("Please choose a direction\n")
 
 def personTwo():
-    print("--Text to add--\n")
-    print("--Text to add--\n")
-    print("--Text to add--\n")
+    attitude= random.randrange(0,1)
+    if attitude == 0:
+        # Friendly response from Person 2
+        anim_print("FRIENDLY RESPONSE FROM PERSON 2\n")
+        anim_print("          \n")
+
+        responses = ["1","2"]
+        userInput = ""
+        while userInput not in responses:
+            anim_print("OPTION 1: FRIENDLY RESPONSE FROM PLAYER\n")
+            anim_print("          \n")
+
+            anim_print("OPTION 2: HOSTILE RESPONSE FROM PLAYER\n")
+            anim_print("          \n")
+
+            anim_print("How will you respond?\n")
+            anim_print("1 or 2?\n")
+            anim_print("          \n")
+
+            userInput = input()
+            capInput = userInput
+            if capInput == "1":
+                # Friendly response from Player
+                anim_print("FRIENDLY RESPONSE FROM PERSON 2\n")
+                anim_print("          \n")
+                ending.append("0")
+
+            elif capInput == "2":
+                # Hostile response from Player
+                anim_print("HOSTILE RESPONSE FROM PERSON 2\n")
+                anim_print("          \n")
+                ending.append("1")
+
+            else:
+                anim_print("Please choose an option\n")
+
+
+    elif attitude == 1:
+        # Hostile response from PERSON 2
+        anim_print("HOSTILE RESPONSE FROM PERSON 2\n")
+        anim_print("          \n")
+
+        responses = ["1","2"]
+        userInput = ""
+        while userInput not in responses:
+            anim_print("OPTION 1: FRIENDLY RESPONSE FROM PLAYER")
+            anim_print("          \n")
+
+            anim_print("OPTION 2: HOSTILE RESPONSE FROM PLAYER\n")
+            anim_print("          \n")
+    
+            anim_print("How will you respond?\n")
+            anim_print("1 or 2?\n")
+
+            userInput = input()
+            capInput = userInput
+            if capInput == "1":
+                # Friendly response from Player
+                anim_print("FRIENDLY RESPONSE FROM PERSON 2\n")
+                ending.append("0")
+
+            elif capInput == "2":
+                # Hostile response from Player
+                anim_print("HOSTILE RESPONSE FROM PERSON 2\n")
+                ending.append("1")
+
+            else:
+                anim_print("Please choose an option\n")
+
     direction = ["FORWARD", "BACKWARD", "ESCAPE"]
     userInput = ""
     while userInput not in direction:
-        print("Options: Forward, Backward, Escape\n")
+        anim_print("Which way will you go? Forward, Backward, Escape\n")
         userInput = input()
         capInput = userInput.upper()
         if capInput == "FORWARD":
-            print("You have chosen to go forward\n")
+            anim_print("You have chosen to go forward\n")
+            anim_print("          \n")
             magician()
         elif capInput == "BACKWARD":
-            print("Adventurers must face their fears, choose a direction\n")
+            anim_print("That person would not be very happy to see you again.\n")
+            anim_print("Choose a different direction.\n")
+
         elif capInput == "ESCAPE":
-            print("You have chosen to escape")
+            anim_print("You have chosen to escape")
             quit()
         else:
-            print("Please choose a direction\n")
+            anim_print("Please choose a direction\n")
 
 def magician():
     print("--Text to add--\n")
