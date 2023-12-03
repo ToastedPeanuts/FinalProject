@@ -69,7 +69,7 @@ Minimal Viable Outcome:
 
 - Week 3 - 11/26/23-12/3/23 (DUE)
   1. Connect all the paths together with inputs- Should correctly lead
-     to the final outcome
+     to the final outcome X
   2. Display images on encounters
   3. Animate text X
   4. (Add music)

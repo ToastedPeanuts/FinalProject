@@ -31,11 +31,12 @@ def introScene():
     direction = ["RIGHT", "LEFT", "BACKWARD", "ESCAPE"]
     userInput = ""
     while userInput not in direction:
-        anim_print("Options: Right, Left, Backward, Escape\n")
         userInput = input()
         capInput = userInput.upper()
         if capInput == "RIGHT":
-            anim_print("You have chosen to go right\n")
+            anim_print("You slowly move through a thick collection of trees.\n")
+            anim_print("The branches on these trees are closely knitted together\n")
+            anim_print("making this path rather dark and weary\n")
             anim_print("          \n")
             monsterOne()
         elif capInput == "LEFT":
