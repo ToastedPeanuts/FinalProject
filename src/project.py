@@ -359,8 +359,14 @@ def personOne():
 
     elif attitude == 1:
         # Hostile response from Person 1
-        anim_print("HOSTILE RESPONSE FROM PERSON 1\n")
+        anim_print("On the path ahead, you can see a dark-hooded\n")
+        anim_print("figure rifling through a small bag and throwing\n")
+        anim_print("contents to the ground with disappointment.\n")
+        anim_print("He notices you as you come up the path.\n")
+        anim_print("The man quickly throws the bag onto his shoulder and grabs out a knife.\n")
+        anim_print("'Watch it there buddy, I know how to use this thing!'\n")
         anim_print("          \n")
+
         responses = ["1","2"]
         userInput = ""
         while userInput not in responses:
