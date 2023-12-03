@@ -139,6 +139,7 @@ def monsterOne():
     while userInput not in direction:
         anim_print("There are multiple paths you can take; Right, Left,\n")
         anim_print("Backwards, and Escape\n")
+
         userInput = input()
         capInput = userInput.upper()
         if capInput == "RIGHT":
@@ -231,7 +232,9 @@ def monsterTwo():
                 # Friendly response from Player
                 anim_print("The monster stares straight at you, almost as if\n")
                 anim_print("he was reading your mind.")
-                anim_print(f"Monster1: Move quickly through here before I change my mind\n")
+                anim_print("          \n")
+                anim_print("Monster1: Move quickly through here before I change my mind\n")
+                anim_print("          \n")
                 ending.append("0")
 
             elif capInput == "2":
@@ -345,12 +348,16 @@ def personOne():
         capInput = userInput.upper()
         if capInput == "RIGHT":
             anim_print("You have chosen to go right\n")
+            anim_print("          \n")
             personTwo()
         elif capInput == "LEFT":
             anim_print("You have chosen to go left\n")
+            anim_print("          \n")
             monsterTwo()
         elif capInput == "BACKWARD":
-            anim_print("Adventurers must face their fears, choose a direction\n")
+            anim_print("That person would not like to see you return\n")
+            anim_print("back this way\n")
+            anim_print("Please choose another direction\n")
         elif capInput == "ESCAPE":
             anim_print("You have chosen to escape")
             quit()
