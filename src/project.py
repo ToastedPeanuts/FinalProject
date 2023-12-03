@@ -437,17 +437,21 @@ def personTwo():
     attitude= random.randrange(0,1)
     if attitude == 0:
         # Friendly response from Person 2
-        anim_print(f"'Well if it isn't the one and only {name}!'\n")
-        anim_print("Fancy seeing you in a place like this.\n")
+        anim_print("As you move through the dense forest you spot a familiar face.\n")
+        anim_print("It just happens to be one of your old teachers")
+        anim_print(f"'Well if it isn't the one and only {name}.'\n")
+        anim_print("Fancy seeing you in a place like this!'\n")
         anim_print("          \n")
 
         responses = ["1","2"]
         userInput = ""
         while userInput not in responses:
-            anim_print("OPTION 1: FRIENDLY RESPONSE FROM PLAYER\n")
+            anim_print("OPTION 1: 'Its so nice to see you! And it is\n")
+            anim_print("a very peculiar place to meet as well.'\n")
             anim_print("          \n")
 
-            anim_print("OPTION 2: HOSTILE RESPONSE FROM PLAYER\n")
+            anim_print("OPTION 2: 'It is quite an interesting place.\n")
+            anim_print("'I unfortunately do not have any time to chit-chat.'\n")
             anim_print("          \n")
 
             anim_print("How will you respond?\n")
@@ -464,7 +468,11 @@ def personTwo():
 
             elif capInput == "2":
                 # Hostile response from Player
-                anim_print("HOSTILE RESPONSE FROM PERSON 2\n")
+                anim_print("The man looks rather taken aback by your response.\n")
+                anim_print("He quickly fixes his face to respond.\n")
+                anim_print("'I'm very sorry to be such an inconvenience to you.\n")
+                anim_print("I will go ahead and get out of your way.'\n")
+                anim_print("The man ")
                 anim_print("          \n")
                 ending.append("1")
 
