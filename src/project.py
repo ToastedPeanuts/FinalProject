@@ -607,7 +607,7 @@ if __name__ == "__main__":
     ending = []
     pygame.mixer.init()
     pygame.mixer.music.load('ForestSounds.mp3')
-    pygame.mixer.music.play()
+    pygame.mixer.music.play(loops=-1)
     pygame.mixer.music.set_volume(0.2)
     anim_print("What is your name?\n")
     # Input from user 
