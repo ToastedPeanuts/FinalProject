@@ -297,7 +297,7 @@ def monsterTwo():
             magician()
 
         elif capInput == "BACKWARD":
-            anim_print("The monster would not be very happy to see you again.\n")
+            anim_print("Progress is only made by moving forward, trust your decision.\n")
             anim_print("Choose a different direction.\n")
 
         elif capInput == "ESCAPE":
@@ -310,16 +310,22 @@ def personOne():
     attitude= random.randrange(0,1)
     if attitude == 0:
         # Friendly response from Person 1
-        anim_print("FRIENDLY RESPONSE FROM PERSON 1\n")
+        anim_print("With such a clear view ahead, you quickly see\n")
+        anim_print("the shopkeeper carefully looking at the plantlife by the path.\n")
+        anim_print("As you approach, he waves to you.\n")
+        anim_print(f"'Hello {name}! So nice to see a friendly face\n")
+        anim_print("so far out here.'\n")
         anim_print("          \n")
 
         responses = ["1","2"]
         userInput = ""
         while userInput not in responses:
-            anim_print("OPTION 1: FRIENDLY PLAYER RESPONSE\n")
+            anim_print("OPTION 1: You wave back.\n")
+            anim_print("'Hello there shopkeep!\n")
+            anim_print("Finding anything good out here?'\n")
             anim_print("          \n")
 
-            anim_print("OPTION 2: HOSTILE PLAYER RESPONSE\n")
+            anim_print("OPTION 2: '\n")
             anim_print("          \n")
 
             anim_print("How will you respond?\n")
@@ -483,7 +489,7 @@ def personTwo():
             anim_print("          \n")
             magician()
         elif capInput == "BACKWARD":
-            anim_print("That person would not be very happy to see you again.\n")
+            anim_print("They seemed nice, but it is best to keep moving forward\n")
             anim_print("Choose a different direction.\n")
 
         elif capInput == "ESCAPE":
