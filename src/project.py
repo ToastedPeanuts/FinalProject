@@ -64,7 +64,9 @@ def monsterOne():
     attitude= random.randrange(0,1)
     if attitude == 0:
         # Initial Friendly response from Monster 1
-        anim_print(f"'Welcome to the woods {name}!\n")
+        anim_print("A large green monster with black dots suddenly\n")
+        anim_print("appears on the path in front of you.\n")
+        anim_print(f"'Oh! Welcome to the woods {name}!\n")
         anim_print("What are you doing so deep in this dangerous place?'\n")
         anim_print("          \n")
 
@@ -86,6 +88,8 @@ def monsterOne():
                 # Friendly response from Player
                 anim_print(f"'Be on your way then {name}.\n")
                 anim_print("Stay safe and keep your eyes and ears sharp'\n")
+                anim_print("The monster slowly moves along his way\n")
+                anim_print("back into the the cover of the trees\n")
                 anim_print("          \n")
                 ending.append("0")
 
@@ -209,16 +213,16 @@ def monsterTwo():
             capInput = userInput
             if capInput == "1":
                 # Friendly response from Player
-                anim_print("Monster2: Be on your way quickly then.\n")
-                anim_print("These woods are not kind to those who dawdle\n")
+                anim_print("'Be on your way quickly then.\n")
+                anim_print("These woods are not kind to those who dawdle.'\n")
                 anim_print("          \n")
                 ending.append("0")
 
             elif capInput == "2":
                 # Hostile response from Player
                 anim_print("The monster flares his nostrils at you in anger.\n")
-                anim_print("Monster2: Watch your back human, you walk on thin ice\n")
-                anim_print("with responses like that.")
+                anim_print("'Watch your back human, you walk on thin ice\n")
+                anim_print("with responses like that.'")
                 anim_print("          \n")
                 ending.append("1")
 
@@ -228,7 +232,7 @@ def monsterTwo():
 
     elif attitude == 1:
         # Initial Hostile response from Monster 2
-        anim_print(f"Monster1: Wonderful! My evening meal has come to me!\n")
+        anim_print(f"'Wonderful! My evening meal has come to me!'\n")
         anim_print("          \n")
 
         responses = ["1","2"]
