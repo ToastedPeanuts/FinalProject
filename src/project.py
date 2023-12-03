@@ -75,11 +75,13 @@ def monsterOne():
             userInput = input()
             capInput = userInput
             if capInput == "1":
-                anim_print(f"Monster1: Be on your way {name}, travel safely!\n")
+                # Friendly response from Player
+                anim_print(f"Monster1: Be on your way then human, travel safely!\n")
                 anim_print("          \n")
                 ending.append("0")
 
             elif capInput == "2":
+                # Hostile response from Player
                 anim_print("Monster1:*GROWL* Better move along before you lose your life human.\n")
                 anim_print("          \n")
                 ending.append("1")
@@ -180,15 +182,20 @@ def monsterTwo():
             userInput = input()
             capInput = userInput
             if capInput == "1":
+                # Friendly response from Player
                 anim_print("Monster2: Be on your way quickly then.\n")
                 anim_print("These woods are not kind to those who dawdle\n")
                 anim_print("          \n")
+                ending.append("0")
 
             elif capInput == "2":
+                # Hostile response from Player
                 anim_print("The monster flares his nostrils at you in anger.\n")
                 anim_print("Monster2: Watch your back human, you walk on thin ice\n")
                 anim_print("with responses like that.")
                 anim_print("          \n")
+                ending.append("1")
+
             else:
                 anim_print("Please choose an option\n")
 
@@ -213,16 +220,20 @@ def monsterTwo():
             userInput = input()
             capInput = userInput
             if capInput == "1":
+                # Friendly response from Player
                 anim_print("The monster stares straight at you, almost as if\n")
                 anim_print("he was reading your mind.")
-                anim_print(f"Monster1: Move quickly through before I change my mind\n")
+                anim_print(f"Monster1: Move quickly through here before I change my mind\n")
+                ending.append("0")
 
             elif capInput == "2":
+                # Hostile response from Player
                 anim_print("The monster huffs and steps forward but quickly stops\n")
                 anim_print("almost as if he is assessing if you really mean what you say.")
                 anim_print("Monster1: *GROWL* Better move along before you lose your life human.\n")
                 anim_print("You quickly move though, not wanting to test if he\n")
                 anim_print("is true to his word.")
+                ending.append("1")
 
             else:
                 anim_print("Please choose an option\n")
@@ -237,7 +248,9 @@ def monsterTwo():
             print("You have chosen to go forward\n")
             magician()
         elif capInput == "BACKWARD":
-            print("Adventurers must face their fears, choose a direction\n")
+            anim_print("The monster would not be very happy to see you again.\n")
+            anim_print("Choose a different direction.\n")
+            
         elif capInput == "ESCAPE":
             print("You have chosen to escape")
             quit()
@@ -322,9 +335,11 @@ def main():
 
 if __name__ == "__main__":
     keyboard.hook(exit_on_key('esc'))
+    # setting up for the ending calculation
     global ending
     ending = []
     anim_print("What is your name?\n")
+    # Input from user 
     global name
     name = input().upper()
     anim_print(f"Hello there {name}!\n")
