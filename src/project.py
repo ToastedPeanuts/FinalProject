@@ -460,15 +460,14 @@ def magician():
         anim_print("You have won! Congratulations!")
         anim_print("          \n")
         quit()
-        
-
     elif ending == ["1","1"]:
         #BAD ENDING
         anim_print("Game Over")
         quit()
-
     else:
         #DECENT ENDING
+        anim_print("You are a human, good job")
+        quit()
 
 
 def main():
