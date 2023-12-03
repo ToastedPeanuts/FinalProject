@@ -236,6 +236,8 @@ def monsterTwo():
 
     elif attitude == 1:
         # Initial Hostile response from Monster 2
+        anim_print("You slowly approach an orange monster with blue streaks.\n")
+        anim_print("He quickly snaps his eyes to you as you get closer.\n")
         anim_print("'Wonderful, now I don't need to hunt for the evening,\n")
         anim_print("my meal has come straight to me!'\n")
         anim_print("          \n")
@@ -247,7 +249,7 @@ def monsterTwo():
             anim_print("I'm not looking for any trouble'\n")
             anim_print("          \n")
 
-            anim_print("Option 2: '\n")
+            anim_print("Option 2: 'Take another step closer and it will be your last.\n")
             anim_print("          \n")
     
             anim_print("How will you respond?\n")
@@ -256,19 +258,20 @@ def monsterTwo():
             userInput = input()
             capInput = userInput
             if capInput == "1":
-                # Friendly response from Player
+                # Responding to Friendly Player
                 anim_print("The monster studies you, almost as if\n")
                 anim_print("he was trying to read your mind.\n")
-                anim_print("          \n")
-                anim_print("Monster1: Move quickly along before I change my mind\n")
+                anim_print("'Luck has found you today as I am in a very good mood.\n")
+                anim_print("Leave while you can, lest my mood be spoiled.\n")
                 anim_print("          \n")
                 ending.append("0")
 
             elif capInput == "2":
-                # Hostile response from Player
+                # Responding to Hostile Player
                 anim_print("The monster huffs and steps forward but quickly stops\n")
-                anim_print("almost as if he is assessing if you really mean what you say.")
-                anim_print("Monster1: *GROWL* Better move along before you lose your life human.\n")
+                anim_print("almost as if he is assessing if you really mean what you say.\n")
+                anim_print("A deep and angry growl vibrates the air between the two of you.\n")
+                anim_print("He snarls out 'Better move along before you lose your life human.'\n")
                 anim_print("You quickly move though, not wanting to test if he\n")
                 anim_print("is true to his word.")
                 ending.append("1")
