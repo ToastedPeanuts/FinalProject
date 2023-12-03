@@ -565,10 +565,14 @@ def magician():
         anim_print("As you proceed towards the living room, one of the chairs\n")
         anim_print("turns towards you, beckoning you to sit. And you ablige the chair.\n")
 
-        anim_print(f"I've been watching you closely {name}\n")
+        anim_print("The other chair in the living room contains a middle aged man, with a pipe in his mouth\n")
+        anim_print(f"'I've been watching you closely {name}.'\n")
         anim_print("'Ever since you entered this forest I have keenly observed\n")
-        anim_print("to see what kind of person you are'\n")
-        anim_print("")
+        anim_print("to see what kind of person you are.'\n")
+        anim_print("'I believe you are different, perhaps one of a kind.'\n")
+        anim_print("If you would indulge me, I have a surprise of sorts for you.'\n")
+        anim_print("You nod to the man, unsure of what surprises may be contained in\n")
+        anim_print("a house of this size.\n")
         anim_print("          \n")
         quit()
 
