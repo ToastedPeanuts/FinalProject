@@ -64,8 +64,8 @@ def monsterOne():
     attitude= random.randrange(0,1)
     if attitude == 0:
         # Initial Friendly response from Monster 1
-        anim_print(f"'Welcome to the woods {name}!'\n")
-        anim_print("'What are you doing so deep in this dangerous place?'\n")
+        anim_print(f"'Welcome to the woods {name}!\n")
+        anim_print("What are you doing so deep in this dangerous place?'\n")
         anim_print("          \n")
 
         responses = ["1","2"]
@@ -84,15 +84,15 @@ def monsterOne():
             capInput = userInput
             if capInput == "1":
                 # Friendly response from Player
-                anim_print(f"'Be on your way then {name}.'\n")
-                anim_print("'Stay safe and keep your eyes and ears sharp'\n")
+                anim_print(f"'Be on your way then {name}.\n")
+                anim_print("Stay safe and keep your eyes and ears sharp'\n")
                 anim_print("          \n")
                 ending.append("0")
 
             elif capInput == "2":
                 # Hostile response from Player
-                anim_print("*GROWL* 'I was trying to be helpful but it seems'\n")
-                anim_print("'all you humans are the same'\n")
+                anim_print("*GROWL* 'I was trying to be helpful but it seems\n")
+                anim_print("all you humans are the same'\n")
                 anim_print("You watch as the monster stomps away\n")
                 anim_print("          \n")
                 ending.append("1")
@@ -103,19 +103,19 @@ def monsterOne():
 
     elif attitude == 1:
         # Initial Hostile response from Monster 1
-        anim_print("'What is a pathetic human like you doing'\n")
-        anim_print("'in a place like this?'\n")
+        anim_print("'What is a pathetic human like you doing\n")
+        anim_print("in a place like this?'\n")
         anim_print("          \n")
 
         responses = ["1","2"]
         userInput = ""
         while userInput not in responses:
-            anim_print("Option 1: I'm not looking for any trouble.\n")
-            anim_print("Please just let me pass\n")
+            anim_print("Option 1: 'I'm not looking for any trouble.\n")
+            anim_print("Please just let me pass'\n")
             anim_print("          \n")
 
-            anim_print("Option 2: None of your business monster!\n")
-            anim_print("Now move out of the way before I take your head as my prize.\n")
+            anim_print("Option 2: 'None of your business monster!\n")
+            anim_print("Now move out of the way before I take your head as my prize.'\n")
             anim_print("          \n")
     
             anim_print("How will you respond?\n")
@@ -186,19 +186,19 @@ def monsterOne():
 def monsterTwo():
     attitude= random.randrange(0,1)
     if attitude == 0:
-        # Friendly response from Monster 2
-        anim_print("Monster2: A human! These woods are not safe for someone like you!\n")
-        anim_print("Perhaps you should turn back?\n")
+        # Initial Friendly response from Monster 2
+        anim_print("'A human! These woods are not safe for someone like you!\n")
+        anim_print("Perhaps you should turn back?'\n")
         anim_print("          \n")
 
         responses = ["1","2"]
         userInput = ""
         while userInput not in responses:
-            anim_print("Option 1: I will be okay, thank you for your concern.\n")
+            anim_print("Option 1: 'I do appreciate the concern, but I can handle myself.'\n")
             anim_print("          \n")
 
-            anim_print("Option 2: No monster is going to tell me what to do.\n")
-            anim_print("Get out of my way!")
+            anim_print("Option 2: 'No monster is going to tell me what to do,\n")
+            anim_print("Get out of my way!'")
             anim_print("          \n")
 
             anim_print("How will you respond?\n")
@@ -227,7 +227,7 @@ def monsterTwo():
 
 
     elif attitude == 1:
-        # Hostile response from Monster 2
+        # Initial Hostile response from Monster 2
         anim_print(f"Monster1: Wonderful! My evening meal has come to me!\n")
         anim_print("          \n")
 
