@@ -52,7 +52,7 @@ def introScene():
             anim_print("          \n")
 
         elif capInput == "ESCAPE":
-            anim_print("You have chosen to escape")
+            anim_print("You have chosen to escape\n")
             anim_print("          \n")
             quit()
 
@@ -184,7 +184,7 @@ def monsterOne():
             anim_print("          \n")
 
         elif capInput == "ESCAPE":
-            anim_print("You have chosen to escape")
+            anim_print("You have chosen to escape\n")
             anim_print("          \n")
             quit()
 
@@ -206,7 +206,7 @@ def monsterTwo():
             anim_print("          \n")
 
             anim_print("Option 2: 'No monster is going to tell me what to do,\n")
-            anim_print("Get out of my way!'")
+            anim_print("Get out of my way!'\n")
             anim_print("          \n")
 
             anim_print("How will you respond?\n")
@@ -226,7 +226,7 @@ def monsterTwo():
                 # Responding to Hostile Player
                 anim_print("The monster flares his nostrils at you in anger.\n")
                 anim_print("'Watch your back human, you walk on thin ice\n")
-                anim_print("with responses like that.'")
+                anim_print("with responses like that.'\n")
                 anim_print("          \n")
                 ending.append("1")
 
@@ -301,7 +301,7 @@ def monsterTwo():
             anim_print("Choose a different direction.\n")
 
         elif capInput == "ESCAPE":
-            anim_print("You have chosen to escape")
+            anim_print("You have chosen to escape\n")
             quit()
         else:
             anim_print("Please choose a direction\n")
@@ -438,7 +438,7 @@ def personTwo():
     if attitude == 0:
         # Friendly response from Person 2
         anim_print("As you move through the dense forest you spot a familiar face.\n")
-        anim_print("It just happens to be one of your old teachers")
+        anim_print("It just happens to be one of your old teachers\n")
         anim_print(f"'Well if it isn't the one and only {name}.'\n")
         anim_print("Fancy seeing you in a place like this!'\n")
         anim_print("          \n")
@@ -472,7 +472,8 @@ def personTwo():
                 anim_print("He quickly fixes his face to respond.\n")
                 anim_print("'I'm very sorry to be such an inconvenience to you.\n")
                 anim_print("I will go ahead and get out of your way.'\n")
-                anim_print("The man ")
+                anim_print("The man slumps his shoulders and quickly moves past you\n")
+                anim_print("back down the path.\n")
                 anim_print("          \n")
                 ending.append("1")
 
@@ -586,14 +587,14 @@ if __name__ == "__main__":
     anim_print("What is your name?\n")
     # Input from user 
     global name
-    name = input().upper()
+    name = input().capitalize()
     #Setup & introduction
     anim_print(f"Hello there {name}!\n")
     anim_print("          \n")
     anim_print("You are a well known traveler and today you have decided to venture through\n")
     anim_print("the dark and mysterious woods.\n")
     anim_print("There is a rumor that a magician resides there\n")
-    anim_print("and will reward you with riches if you find him!")
+    anim_print("and will reward you with riches if you find him!\n")
     anim_print("          \n")
     anim_print(f'Good luck on your quest {name}, stick to the path!\n')
     anim_print("          \n")
