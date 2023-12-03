@@ -156,17 +156,22 @@ def monsterOne():
         userInput = input()
         capInput = userInput.upper()
         if capInput == "RIGHT":
-            anim_print("You have chosen to go right\n")
+            anim_print("You slowly move along a flowing river,\n")
+            anim_print("breathing in the fresh air and admiring\n")
+            anim_print("all the life around you.\n")
             anim_print("          \n")
             personTwo()
 
         elif capInput == "LEFT":
-            anim_print("You have chosen to go left\n")
+            anim_print("The path you are following leads into\n")
+            anim_print("a plain of long grass.\n")
+            anim_print("The blades of grass slowly sway with the wind\n")
+            anim_print("as you move through.\n")
             anim_print("          \n")
             monsterTwo()
 
         elif capInput == "BACKWARD":
-            anim_print("The monster would not be very happy to see you again.\n")
+            anim_print("The monster would probably not be very happy to see you again.\n")
             anim_print("Choose a different direction.\n")
             anim_print("          \n")
 
