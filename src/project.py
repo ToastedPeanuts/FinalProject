@@ -108,6 +108,7 @@ def monsterOne():
     
             anim_print("How will you respond?\n")
             anim_print("1 or 2?\n")
+            
             userInput = input()
             capInput = userInput
             if capInput == "1":
@@ -241,21 +242,21 @@ def monsterTwo():
     direction = ["FORWARD", "BACKWARD", "ESCAPE"]
     userInput = ""
     while userInput not in direction:
-        print("Options: Forward, Backward, Escape\n")
+        anim_print("Options: Forward, Backward, Escape\n")
         userInput = input()
         capInput = userInput.upper()
         if capInput == "FORWARD":
-            print("You have chosen to go forward\n")
+            anim_print("You have chosen to go forward\n")
             magician()
         elif capInput == "BACKWARD":
             anim_print("The monster would not be very happy to see you again.\n")
             anim_print("Choose a different direction.\n")
-            
+
         elif capInput == "ESCAPE":
-            print("You have chosen to escape")
+            anim_print("You have chosen to escape")
             quit()
         else:
-            print("Please choose a direction\n")
+            anim_print("Please choose a direction\n")
 
 def personOne():
     print("--Text to add--\n")
