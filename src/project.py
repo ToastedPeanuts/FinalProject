@@ -92,7 +92,7 @@ def monsterOne():
 
     elif attitude == 1:
         # Hostile response from Monster 1
-        anim_print(f"Monster1: What is a pathetic human like you doing\n")
+        anim_print("Monster1: What is a pathetic human like you doing\n")
         anim_print("is a place like this?\n")
         anim_print("          \n")
         responses = ["1","2"]
@@ -115,6 +115,7 @@ def monsterOne():
                 # Friendly response from Player
                 anim_print("The monster stares straight at you, almost as if\n")
                 anim_print("he was reading your mind.")
+                anim_print("          \n")
                 anim_print("Monster1: Move quickly through before I change my mind\n")
                 anim_print("          \n")
                 ending.append("0")
@@ -123,6 +124,7 @@ def monsterOne():
                 # Hostile response from Player
                 anim_print("The monster huffs and steps forward but quickly stops\n")
                 anim_print("almost as if he is assessing if you really mean what you say.")
+                anim_print("          \n")
                 anim_print("Monster1: *GROWL* Better move along before you lose your life human.\n")
                 anim_print("You quickly move though, not wanting to test if he\n")
                 anim_print("is true to his word.")
