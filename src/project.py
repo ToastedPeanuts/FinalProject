@@ -370,10 +370,13 @@ def personOne():
         responses = ["1","2"]
         userInput = ""
         while userInput not in responses:
-            anim_print("OPTION 1: FRIENDLY PLAYER RESPONSE\n")
+            anim_print("OPTION 1: You quickly raise your hands up to show you are unarmed\n")
+            anim_print("'I'm just on a walk, there is no need for violence please.'\n")
             anim_print("          \n")
 
-            anim_print("OPTION 2: HOSTILE PLAYER RESPONSE\n")
+            anim_print("OPTION 2: You place your hand on your hip where your concealed knife is.\n")
+            anim_print("'You think I'm afraid of some petty thief?\n")
+            anim_print("Get out of my way you pathetic scum!\n")
             anim_print("          \n")
     
             anim_print("How will you respond?\n")
@@ -382,13 +385,16 @@ def personOne():
             userInput = input()
             capInput = userInput
             if capInput == "1":
-                # Friendly response from Player
-                anim_print("FRIENDLY RESPONSE FROM PLAYER 1\n")
+                # Responding to Friendly Player
+                anim_print("The man slowly lowers the knife, but still remains cautious\n")
+                anim_print("'Just forget you saw me, I was never here.'\n")
+                anim_print("The man slowly backs away and sprints\n")
+                anim_print("to the trees, escaping your sight.\n")
                 anim_print("          \n")
                 ending.append("0")
 
             elif capInput == "2":
-                # Hostile response from Player
+                # # Responding to Hostile Player
                 anim_print("HOSTILE RESPONSE FROM PLAYER 1\n")
                 anim_print("          \n")
                 ending.append("1")
