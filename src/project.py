@@ -139,6 +139,7 @@ def monsterOne():
     while userInput not in direction:
         anim_print("There are multiple paths you can take; Right, Left,\n")
         anim_print("Backwards, and Escape\n")
+        anim_print("Which path would you like to take?\n")
 
         userInput = input()
         capInput = userInput.upper()
@@ -254,6 +255,9 @@ def monsterTwo():
     while userInput not in direction:
         anim_print("There is only a couple ways to go from here\n")
         anim_print("Forward, Backward, Escape\n")
+        anim_print("Which way would you like to go?\n")
+        anim_print("          \n")
+        
         userInput = input()
         capInput = userInput.upper()
         if capInput == "FORWARD":
