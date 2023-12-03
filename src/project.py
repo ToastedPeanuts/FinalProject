@@ -265,9 +265,75 @@ def monsterTwo():
             anim_print("Please choose a direction\n")
 
 def personOne():
-    print("--Text to add--\n")
-    print("--Text to add--\n")
-    print("--Text to add--\n")
+    attitude= random.randrange(0,1)
+    if attitude == 0:
+        # Friendly response from Person 1
+        anim_print("FRIENDLY RESPONSE FROM PERSON 1\n")
+        anim_print("          \n")
+
+        responses = ["1","2"]
+        userInput = ""
+        while userInput not in responses:
+            anim_print("OPTION 1: FRIENDLY PLAYER RESPONSE\n")
+            anim_print("          \n")
+
+            anim_print("OPTION 2: HOSTILE PLAYER RESPONSE\n")
+            anim_print("          \n")
+
+            anim_print("How will you respond?\n")
+            anim_print("1 or 2?\n")
+
+            userInput = input()
+            capInput = userInput
+            if capInput == "1":
+                # Friendly response from Player
+                anim_print("RESPONSE FROM PERSON 1\n")
+                anim_print("          \n")
+                ending.append("0")
+
+            elif capInput == "2":
+                # Hostile response from Player
+                anim_print("RESPONSE FROM PERSON 1\n")
+                anim_print("          \n")
+                ending.append("1")
+
+            else:
+                anim_print("Please choose an option\n")
+
+
+    elif attitude == 1:
+        # Hostile response from Person 1
+        anim_print("HOSTILE RESPONSE FROM PERSON 1\n")
+        anim_print("          \n")
+        responses = ["1","2"]
+        userInput = ""
+        while userInput not in responses:
+            anim_print("OPTION 1: FRIENDLY PLAYER RESPONSE\n")
+            anim_print("          \n")
+
+            anim_print("OPTION 2: HOSTILE PLAYER RESPONSE\n")
+            anim_print("          \n")
+    
+            anim_print("How will you respond?\n")
+            anim_print("1 or 2?\n")
+
+            userInput = input()
+            capInput = userInput
+            if capInput == "1":
+                # Friendly response from Player
+                anim_print("FRIENDLY RESPONSE FROM PLAYER 1\n")
+                anim_print("          \n")
+                ending.append("0")
+
+            elif capInput == "2":
+                # Hostile response from Player
+                anim_print("HOSTILE RESPONSE FROM PLAYER 1\n")
+                anim_print("          \n")
+                ending.append("1")
+
+            else:
+                anim_print("Please choose an option\n")
+
     direction = ["RIGHT", "LEFT", "BACKWARD", "ESCAPE"]
     userInput = ""
     while userInput not in direction:
