@@ -437,7 +437,8 @@ def personTwo():
     attitude= random.randrange(0,1)
     if attitude == 0:
         # Friendly response from Person 2
-        anim_print("FRIENDLY RESPONSE FROM PERSON 2\n")
+        anim_print(f"'Well if it isn't the one and only {name}!'\n")
+        anim_print("Fancy seeing you in a place like this.\n")
         anim_print("          \n")
 
         responses = ["1","2"]
