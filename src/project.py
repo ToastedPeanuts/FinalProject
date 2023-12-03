@@ -107,8 +107,12 @@ def monsterOne():
 
     elif attitude == 1:
         # Initial Hostile response from Monster 1
+        anim_print("You slowly approach a large, red monster sitting\n")
+        anim_print("underneath a tree on the path.\n")
+        anim_print("The monster spots you and slowly gets to it's feet.\n")
         anim_print("'What is a pathetic human like you doing\n")
         anim_print("in a place like this?'\n")
+        anim_print("He grins menacingly, looking you up and down.\n")
         anim_print("          \n")
 
         responses = ["1","2"]
