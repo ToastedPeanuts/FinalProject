@@ -499,10 +499,11 @@ def personTwo():
         responses = ["1","2"]
         userInput = ""
         while userInput not in responses:
-            anim_print("OPTION 1: FRIENDLY RESPONSE FROM PLAYER")
+            anim_print("OPTION 1: 'I didn't mean to interupt\n")
+            anim_print("I was just passing though on the path'\n")
             anim_print("          \n")
 
-            anim_print("OPTION 2: HOSTILE RESPONSE FROM PLAYER\n")
+            anim_print("OPTION 2: 'That is none of your business'\n")
             anim_print("          \n")
     
             anim_print("How will you respond?\n")
@@ -512,12 +513,18 @@ def personTwo():
             capInput = userInput
             if capInput == "1":
                 # Friendly response from Player
-                anim_print("FRIENDLY RESPONSE FROM PERSON 2\n")
+                anim_print("Shes gazes at you for a moment longer\n")
+                anim_print("before turning back towards her book.\n")
+                anim_print("She waves a hand in the air as if to shoo you away.\n")
+                anim_print("'Please move away from the clearing,\n")
+                anim_print("you are blocking my energies.'\n")
                 ending.append("0")
 
             elif capInput == "2":
                 # Hostile response from Player
-                anim_print("HOSTILE RESPONSE FROM PERSON 2\n")
+                anim_print("Her gaze hardens as though she were\n")
+                anim_print("trying to turn you to stone.\n")
+                anim_print("'Leave the clearing before turn you into a toad!'\n")
                 ending.append("1")
 
             else:
@@ -535,6 +542,7 @@ def personTwo():
             anim_print("a small cottage with a smoke stack coming from the chimney.\n")
             anim_print("          \n")
             magician()
+
         elif capInput == "BACKWARD":
             anim_print("They seemed nice, but it is best to keep moving forward\n")
             anim_print("Choose a different direction.\n")
@@ -542,6 +550,7 @@ def personTwo():
         elif capInput == "ESCAPE":
             anim_print("You have chosen to escape")
             quit()
+
         else:
             anim_print("Please choose a direction\n")
 
@@ -551,10 +560,12 @@ def magician():
         anim_print("You have won! Congratulations!")
         anim_print("          \n")
         quit()
+
     elif ending == ["1","1"]:
         #BAD ENDING
         anim_print("Game Over")
         quit()
+        
     else:
         #DECENT ENDING
         anim_print("You are a human, good job")
