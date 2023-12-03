@@ -486,7 +486,14 @@ def personTwo():
 
     elif attitude == 1:
         # Hostile response from PERSON 2
-        anim_print("HOSTILE RESPONSE FROM PERSON 2\n")
+        anim_print("As you walk along the path, you see a woman\n")
+        anim_print("in the middle of a clearing.\n")
+        anim_print("She appears to be holding a book and talking to herself.\n")
+        anim_print("As you approach, the air thickens and\n")
+        anim_print("a faint glow swirls around the women.\n")
+        anim_print("You stop at the edge of the clearing so as not to get too close.\n")
+        anim_print("The women whips her head around quickly with an annoyed look\n")
+        anim_print("'Who are you and what are you doing here?'\n")
         anim_print("          \n")
 
         responses = ["1","2"]
