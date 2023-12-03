@@ -282,7 +282,7 @@ def monsterTwo():
     direction = ["FORWARD", "BACKWARD", "ESCAPE"]
     userInput = ""
     while userInput not in direction:
-        anim_print("There is only a couple ways to go from here\n")
+        anim_print("There aren't very many options to choose from here...\n")
         anim_print("Forward, Backward, Escape\n")
         anim_print("Which way would you like to go?\n")
         anim_print("          \n")
@@ -290,9 +290,12 @@ def monsterTwo():
         userInput = input()
         capInput = userInput.upper()
         if capInput == "FORWARD":
-            anim_print("You have chosen to go forward\n")
+            anim_print("The path ascends into a hill as you move along.\n")
+            anim_print("As you reach the peak, you notice\n")
+            anim_print("a small cottage with a smoke stack coming from the chimney.\n")
             anim_print("          \n")
             magician()
+
         elif capInput == "BACKWARD":
             anim_print("The monster would not be very happy to see you again.\n")
             anim_print("Choose a different direction.\n")
@@ -474,7 +477,9 @@ def personTwo():
         userInput = input()
         capInput = userInput.upper()
         if capInput == "FORWARD":
-            anim_print("You have chosen to go forward\n")
+            anim_print("The path ascends into a hill as you move along.\n")
+            anim_print("As you reach the peak, you notice\n")
+            anim_print("a small cottage with a smoke stack coming from the chimney.\n")
             anim_print("          \n")
             magician()
         elif capInput == "BACKWARD":
