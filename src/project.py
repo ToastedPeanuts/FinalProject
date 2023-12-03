@@ -46,14 +46,16 @@ def introScene():
             anim_print("guiding your way\n")
             anim_print("          \n")
             personOne()
-            
+
         elif capInput == "BACKWARD":
             anim_print("Adventurers must face their fears, choose a direction\n")
             anim_print("          \n")
+
         elif capInput == "ESCAPE":
             anim_print("You have chosen to escape")
             anim_print("          \n")
             quit()
+
         else:
             anim_print("Please choose a direction\n")
             anim_print("          \n")
@@ -62,9 +64,10 @@ def monsterOne():
     attitude= random.randrange(0,1)
     if attitude == 0:
         # Friendly response from Monster 1
-        anim_print(f"Monster1: Welcome to the woods!\n")
-        anim_print("What are you doing so deep in these dangerous woods?\n")
+        anim_print(f"'Welcome to the woods {name}!'\n")
+        anim_print("'What are you doing so deep in this dangerous place?'\n")
         anim_print("          \n")
+
         responses = ["1","2"]
         userInput = ""
         while userInput not in responses:
@@ -81,13 +84,16 @@ def monsterOne():
             capInput = userInput
             if capInput == "1":
                 # Friendly response from Player
-                anim_print(f"Monster1: Be on your way then human, travel safely!\n")
+                anim_print(f"'Be on your way then {name}.'\n")
+                anim_print("'Stay safe and keep your eyes and ears sharp'\n")
                 anim_print("          \n")
                 ending.append("0")
 
             elif capInput == "2":
                 # Hostile response from Player
-                anim_print("Monster1:*GROWL* Better move along before you lose your life human.\n")
+                anim_print("*GROWL* 'I was trying to be helpful but it seems'\n")
+                anim_print("'all you humans are the same'\n")
+                anim_print("You watch as the monster stomps away\n")
                 anim_print("          \n")
                 ending.append("1")
 
