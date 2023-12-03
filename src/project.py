@@ -428,7 +428,7 @@ def personOne():
             anim_print("Please choose another direction\n")
 
         elif capInput == "ESCAPE":
-            anim_print("You have chosen to escape")
+            anim_print("You have chosen to escape\n")
             quit()
         else:
             anim_print("Please choose a direction\n")
@@ -446,8 +446,8 @@ def personTwo():
         responses = ["1","2"]
         userInput = ""
         while userInput not in responses:
-            anim_print("OPTION 1: 'Its so nice to see you! And it is\n")
-            anim_print("a very peculiar place to meet as well.'\n")
+            anim_print("OPTION 1: 'Its so nice to see you again!\n")
+            anim_print("What are you doing all the way out here?'\n")
             anim_print("          \n")
 
             anim_print("OPTION 2: 'It is quite an interesting place.\n")
@@ -462,7 +462,10 @@ def personTwo():
             capInput = userInput
             if capInput == "1":
                 # Friendly response from Player
-                anim_print("FRIENDLY RESPONSE FROM PERSON 2\n")
+                anim_print("'I was actually just on my evening hike to get some exercise in.\n")
+                anim_print("It seems that I have been out for awhile!\n")
+                anim_print("I think its about time for me to head home for dinner.'\n")
+                anim_print(f"'Have a wonderful evening {name}, see you around!'\n")
                 anim_print("          \n")
                 ending.append("0")
 
