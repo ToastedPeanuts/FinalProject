@@ -396,7 +396,7 @@ def personOne():
             elif capInput == "2":
                 # # Responding to Hostile Player
                 anim_print("The man's eyes widen as he considers how serious and threatening you are.\n")
-                anim_print("He drops the bag and knife and sprints with everything\n")
+                anim_print("He drops the bag and knife and sprints as fast as he can\n")
                 anim_print("to the trees to escape from your sight.\n")
                 anim_print("          \n")
                 ending.append("1")
@@ -414,7 +414,7 @@ def personOne():
             anim_print("You have chosen to go right\n")
             anim_print("          \n")
             personTwo()
-            
+
         elif capInput == "LEFT":
             anim_print("You have chosen to go left\n")
             anim_print("          \n")
