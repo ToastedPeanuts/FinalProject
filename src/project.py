@@ -152,7 +152,7 @@ def monsterTwo():
     attitude= random.randrange(0,1)
     if attitude == 0:
         # Friendly response from Monster 2
-        anim_print("A human! These woods are not safe for someone like you!\n")
+        anim_print("Monster2: A human! These woods are not safe for someone like you!\n")
         anim_print("Perhaps you should turn back?\n")
         anim_print("          \n")
         responses = ["1","2"]
@@ -167,21 +167,26 @@ def monsterTwo():
 
             anim_print("How will you respond?\n")
             anim_print("1 or 2?\n")
+            anim_print("          \n")
 
             userInput = input()
             capInput = userInput
             if capInput == "1":
-                anim_print(f"Monster1: Be on your way {name}, travel safely!\n")
+                anim_print("Monster2: Be on your way quickly then.\n")
+                anim_print("These woods are not kind to those who dawdle\n")
                 anim_print("          \n")
+
             elif capInput == "2":
-                anim_print("Monster1:*GROWL* Better move along before you lose your life human.\n")
+                anim_print("The monster flares his nostrils at you in anger.\n")
+                anim_print("Monster2: Watch your back human, you walk on thin ice\n")
+                anim_print("with responses like that.")
                 anim_print("          \n")
             else:
                 anim_print("Please choose an option\n")
 
 
     elif attitude == 1:
-        # Hostile response from Monster 1
+        # Hostile response from Monster 2
         anim_print(f"Monster1: Wonderful! My evening meal has come to me!\n")
         anim_print("          \n")
         responses = ["1","2"]
@@ -309,6 +314,8 @@ def main():
 
 if __name__ == "__main__":
     keyboard.hook(exit_on_key('esc'))
+    global ending
+    ending = ["0","0","0","0"]
     anim_print("What is your name?\n")
     global name
     name = input().upper()
