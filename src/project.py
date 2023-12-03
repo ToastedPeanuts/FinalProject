@@ -108,7 +108,7 @@ def monsterOne():
     
             anim_print("How will you respond?\n")
             anim_print("1 or 2?\n")
-            
+
             userInput = input()
             capInput = userInput
             if capInput == "1":
@@ -116,6 +116,7 @@ def monsterOne():
                 anim_print("The monster stares straight at you, almost as if\n")
                 anim_print("he was reading your mind.")
                 anim_print(f"Monster1: Move quickly through before I change my mind\n")
+                anim_print("          \n")
                 ending.append("0")
 
             elif capInput == "2":
@@ -125,6 +126,7 @@ def monsterOne():
                 anim_print("Monster1: *GROWL* Better move along before you lose your life human.\n")
                 anim_print("You quickly move though, not wanting to test if he\n")
                 anim_print("is true to his word.")
+                anim_print("          \n")
                 ending.append("1")
 
             else:
@@ -166,6 +168,7 @@ def monsterTwo():
         anim_print("Monster2: A human! These woods are not safe for someone like you!\n")
         anim_print("Perhaps you should turn back?\n")
         anim_print("          \n")
+
         responses = ["1","2"]
         userInput = ""
         while userInput not in responses:
@@ -205,6 +208,7 @@ def monsterTwo():
         # Hostile response from Monster 2
         anim_print(f"Monster1: Wonderful! My evening meal has come to me!\n")
         anim_print("          \n")
+
         responses = ["1","2"]
         userInput = ""
         while userInput not in responses:
@@ -218,6 +222,7 @@ def monsterTwo():
     
             anim_print("How will you respond?\n")
             anim_print("1 or 2?\n")
+
             userInput = input()
             capInput = userInput
             if capInput == "1":
@@ -247,6 +252,7 @@ def monsterTwo():
         capInput = userInput.upper()
         if capInput == "FORWARD":
             anim_print("You have chosen to go forward\n")
+            anim_print("          \n")
             magician()
         elif capInput == "BACKWARD":
             anim_print("The monster would not be very happy to see you again.\n")
