@@ -33,19 +33,19 @@ def introScene():
         if capInput == "RIGHT":
             anim_print("You slowly move through a thick collection of trees.\n")
             anim_print("The branches on these trees are closely knitted together\n")
-            anim_print("making this path rather dark and weary\n")
+            anim_print("making this path rather dark and weary.\n")
             anim_print("          \n")
             monsterOne()
 
         elif capInput == "LEFT":
             anim_print("You walk along a well used path.\n")
             anim_print("The sun shines bright, almost like the light is\n")
-            anim_print("guiding your way\n")
+            anim_print("guiding your way.\n")
             anim_print("          \n")
             personOne()
 
         elif capInput == "BACKWARD":
-            anim_print("Adventurers must face their fears, choose a direction\n")
+            anim_print("Adventurers must face their fears, choose a direction.\n")
             anim_print("          \n")
 
         elif capInput == "ESCAPE":
@@ -192,6 +192,9 @@ def monsterTwo():
     attitude= random.randrange(0,1)
     if attitude == 0:
         # Initial Friendly response from Monster 2
+        anim_print("In the grass you spot what seems to be\n")
+        anim_print("a large purple monster laying in the grass.\n")
+        anim_print("His head pops up as he hears the grass shift.\n")
         anim_print("'A human! These woods are not safe for someone like you!\n")
         anim_print("Perhaps you should turn back?'\n")
         anim_print("          \n")
