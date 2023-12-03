@@ -4,9 +4,6 @@ import random
 import keyboard
 import os
 
-def draw_text(screen,text,font,text_col,x,y):
-    img = font.render(text, True, text_col)
-    screen.blit(img,(x,y))
 
 def anim_print(text):
     for character in text:
@@ -557,7 +554,10 @@ def personTwo():
 def magician():
     if ending == ["0","0"]:
         #GOOD ENDING
-        anim_print("You have won! Congratulations!")
+        anim_print("You approach the cottage cautiously but also curiously.\n")
+        anim_print("As you reach to knock on the door, it swings open by itself.\n")
+        anim_print("You hear a come voice from inside\n")
+        anim_print("")
         anim_print("          \n")
         quit()
 

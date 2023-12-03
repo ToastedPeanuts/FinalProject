@@ -55,10 +55,10 @@ Minimal Viable Outcome:
 ## Milestones
 
 - Week 1 - 11/12/23-11/19/23
-  1. Initilization of the game X
-  2. Input from the player- Name & Paths X
-  3. Basic display screen for the game X
-  4. Set up structures for encounters with 5 characters X
+  1. Initilization of the game 
+  2. Input from the player- Name & Paths 
+  3. Basic display screen for the game 
+  4. Set up structures for encounters with 5 characters 
 
 - Week 2 - 11/19/23-11/26/23
   1. Create friendly/hostile initial conversation for 4 characters
@@ -69,8 +69,8 @@ Minimal Viable Outcome:
 
 - Week 3 - 11/26/23-12/3/23 (DUE)
   1. Connect all the paths together with inputs- Should correctly lead
-     to the final outcome X
+     to the final outcome 
   2. Display images on encounters
-  3. Animate text X
+  3. Animate text 
   4. (Add music)
   5. (Different music based on encounters)
