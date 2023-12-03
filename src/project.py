@@ -236,17 +236,18 @@ def monsterTwo():
 
     elif attitude == 1:
         # Initial Hostile response from Monster 2
-        anim_print(f"'Wonderful! My evening meal has come to me!'\n")
+        anim_print("'Wonderful, now I don't need to hunt for the evening,\n")
+        anim_print("my meal has come straight to me!'\n")
         anim_print("          \n")
 
         responses = ["1","2"]
         userInput = ""
         while userInput not in responses:
-            anim_print("Option 1: Just peacefully adventuring through")
-            anim_print("I'm not looking for any trouble\n")
+            anim_print("Option 1: 'I am just peacefully adventuring through\n")
+            anim_print("I'm not looking for any trouble'\n")
             anim_print("          \n")
 
-            anim_print("Option 2: Move out of the way before I take your head as my prize!\n")
+            anim_print("Option 2: '\n")
             anim_print("          \n")
     
             anim_print("How will you respond?\n")
@@ -256,10 +257,10 @@ def monsterTwo():
             capInput = userInput
             if capInput == "1":
                 # Friendly response from Player
-                anim_print("The monster stares straight at you, almost as if\n")
-                anim_print("he was reading your mind.")
+                anim_print("The monster studies you, almost as if\n")
+                anim_print("he was trying to read your mind.\n")
                 anim_print("          \n")
-                anim_print("Monster1: Move quickly through here before I change my mind\n")
+                anim_print("Monster1: Move quickly along before I change my mind\n")
                 anim_print("          \n")
                 ending.append("0")
 
