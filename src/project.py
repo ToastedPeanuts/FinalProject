@@ -407,21 +407,24 @@ def personOne():
     direction = ["RIGHT", "LEFT", "BACKWARD", "ESCAPE"]
     userInput = ""
     while userInput not in direction:
-        anim_print("Which way will you go? Right, Left, Backward, Escape\n")
+        anim_print("There are multiple paths up ahead.\n")
+        anim_print("Which way would you like to go?\n")
+        anim_print("Right, Left, Backward, Escape\n")
         userInput = input()
         capInput = userInput.upper()
         if capInput == "RIGHT":
-            anim_print("You have chosen to go right\n")
+            anim_print("You walk along a very dense path, crowded with weeds, grass, and shrubbery.\n")
             anim_print("          \n")
             personTwo()
 
         elif capInput == "LEFT":
-            anim_print("You have chosen to go left\n")
+            anim_print("You walk on an often traversed path.\n")
+            anim_print("All the grass has been stepped on and flattened to the ground.\n")
             anim_print("          \n")
             monsterTwo()
 
         elif capInput == "BACKWARD":
-            anim_print("There is nothing back that direction.\n")
+            anim_print("There is nothing back that direction for you.\n")
             anim_print("Please choose another direction\n")
 
         elif capInput == "ESCAPE":
