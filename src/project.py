@@ -338,16 +338,18 @@ def personOne():
                 # Responding to Friendly Player
                 anim_print("'Just some various mushrooms and herbs'\n")
                 anim_print("nothing too fancy.'\n")
-                anim_print("'Should probably get home to the wife\n")
-                anim_print("she really hates me being out here this late.'\n")
+                anim_print("'Should probably get home to the wife though.\n")
+                anim_print("She really hates me being out here this late.'\n")
                 anim_print("He slowly picks up his bag and starts down\n")
-                anim_print("the path you just walk up.\n")
+                anim_print("the path you just walked up.\n")
                 anim_print("          \n")
                 ending.append("0")
 
             elif capInput == "2":
                 # Responding to Hostile Player
-                anim_print("RESPONSE FROM PERSON 1\n")
+                anim_print("The shopkeep looks at you with surprise.\n")
+                anim_print("He grabs his bag in silence and quickly pushes past you\n")
+                anim_print("back down the road.\n")
                 anim_print("          \n")
                 ending.append("1")
 
