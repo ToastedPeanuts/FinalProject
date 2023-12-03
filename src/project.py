@@ -63,7 +63,7 @@ def introScene():
 def monsterOne():
     attitude= random.randrange(0,1)
     if attitude == 0:
-        # Friendly response from Monster 1
+        # Initial Friendly response from Monster 1
         anim_print(f"'Welcome to the woods {name}!'\n")
         anim_print("'What are you doing so deep in this dangerous place?'\n")
         anim_print("          \n")
@@ -102,15 +102,16 @@ def monsterOne():
 
 
     elif attitude == 1:
-        # Hostile response from Monster 1
-        anim_print("Monster1: What is a pathetic human like you doing\n")
-        anim_print("is a place like this?\n")
+        # Initial Hostile response from Monster 1
+        anim_print("'What is a pathetic human like you doing'\n")
+        anim_print("'in a place like this?'\n")
         anim_print("          \n")
+
         responses = ["1","2"]
         userInput = ""
         while userInput not in responses:
-            anim_print("Option 1: Just peacefully adventuring through")
-            anim_print("I'm not looking for any trouble\n")
+            anim_print("Option 1: I'm not looking for any trouble.\n")
+            anim_print("Please just let me pass\n")
             anim_print("          \n")
 
             anim_print("Option 2: None of your business monster!\n")
@@ -124,10 +125,10 @@ def monsterOne():
             capInput = userInput
             if capInput == "1":
                 # Friendly response from Player
-                anim_print("The monster stares straight at you, almost as if\n")
-                anim_print("he was reading your mind.")
+                anim_print("You feel his questioning gaze, almost like he\n")
+                anim_print("doesn't fully believe you.\n")
                 anim_print("          \n")
-                anim_print("Monster1: Move quickly through before I change my mind\n")
+                anim_print("'Move quickly through before I change my mind.'\n")
                 anim_print("          \n")
                 ending.append("0")
 
@@ -136,7 +137,7 @@ def monsterOne():
                 anim_print("The monster huffs and steps forward but quickly stops\n")
                 anim_print("almost as if he is assessing if you really mean what you say.")
                 anim_print("          \n")
-                anim_print("Monster1: *GROWL* Better move along before you lose your life human.\n")
+                anim_print("'*GROWL* Better move along before you lose your life human.'\n")
                 anim_print("You quickly move though, not wanting to test if he\n")
                 anim_print("is true to his word.")
                 anim_print("          \n")
