@@ -216,14 +216,14 @@ def monsterTwo():
             userInput = input()
             capInput = userInput
             if capInput == "1":
-                # Friendly response from Player
+                # Responding to Friendly Player
                 anim_print("'Be on your way quickly then.\n")
                 anim_print("These woods are not kind to those who dawdle.'\n")
                 anim_print("          \n")
                 ending.append("0")
 
             elif capInput == "2":
-                # Hostile response from Player
+                # Responding to Hostile Player
                 anim_print("The monster flares his nostrils at you in anger.\n")
                 anim_print("'Watch your back human, you walk on thin ice\n")
                 anim_print("with responses like that.'")
@@ -320,12 +320,13 @@ def personOne():
         responses = ["1","2"]
         userInput = ""
         while userInput not in responses:
-            anim_print("OPTION 1: You wave back.\n")
+            anim_print("OPTION 1: You wave back towards the man.\n")
             anim_print("'Hello there shopkeep!\n")
             anim_print("Finding anything good out here?'\n")
             anim_print("          \n")
 
-            anim_print("OPTION 2: '\n")
+            anim_print("OPTION 2: Your face slowly shifts into a scowl.\n")
+            anim_print("'I'm really busy, please move out of my way'\n")
             anim_print("          \n")
 
             anim_print("How will you respond?\n")
@@ -334,13 +335,18 @@ def personOne():
             userInput = input()
             capInput = userInput
             if capInput == "1":
-                # Friendly response from Player
-                anim_print("RESPONSE FROM PERSON 1\n")
+                # Responding to Friendly Player
+                anim_print("'Just some various mushrooms and herbs'\n")
+                anim_print("nothing too fancy.'\n")
+                anim_print("'Should probably get home to the wife\n")
+                anim_print("she really hates me being out here this late.'\n")
+                anim_print("He slowly picks up his bag and starts down\n")
+                anim_print("the path you just walk up.\n")
                 anim_print("          \n")
                 ending.append("0")
 
             elif capInput == "2":
-                # Hostile response from Player
+                # Responding to Hostile Player
                 anim_print("RESPONSE FROM PERSON 1\n")
                 anim_print("          \n")
                 ending.append("1")
