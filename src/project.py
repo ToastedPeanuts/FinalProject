@@ -605,6 +605,9 @@ if __name__ == "__main__":
     # setting up for the ending calculation
     global ending
     ending = []
+    pygame.mixer.init()
+    pygame.mixer.music.load('ForestSounds.mp3')
+    pygame.mixer.music.play()
     anim_print("What is your name?\n")
     # Input from user 
     global name
