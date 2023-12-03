@@ -143,11 +143,11 @@ def monsterOne():
             elif capInput == "2":
                 # Hostile response from Player
                 anim_print("The monster huffs and steps forward but quickly stops\n")
-                anim_print("almost as if he is assessing if you really mean what you say.")
-                anim_print("          \n")
-                anim_print("'*GROWL* Better move along before you lose your life human.'\n")
-                anim_print("You quickly move though, not wanting to test if he\n")
-                anim_print("is true to his word.")
+                anim_print("almost as if he is assessing if you really mean what you say.\n")
+                anim_print("He bares his teeth and growls very deeply towards you.\n")
+                anim_print("'Better move along before you lose your life human.'\n")
+                anim_print("You move past him with confidence, very aware of the\n")
+                anim_print("eyes glaring at you as you pass.\n")
                 anim_print("          \n")
                 ending.append("1")
 
