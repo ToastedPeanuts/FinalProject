@@ -387,7 +387,7 @@ def personOne():
             if capInput == "1":
                 # Responding to Friendly Player
                 anim_print("The man slowly lowers the knife, but still remains cautious\n")
-                anim_print("'Just forget you saw me, I was never here.'\n")
+                anim_print("'Just forget you saw me, I was never here!'\n")
                 anim_print("The man slowly backs away and sprints\n")
                 anim_print("to the trees, escaping your sight.\n")
                 anim_print("          \n")
@@ -395,7 +395,9 @@ def personOne():
 
             elif capInput == "2":
                 # # Responding to Hostile Player
-                anim_print("HOSTILE RESPONSE FROM PLAYER 1\n")
+                anim_print("The man's eyes widen as he considers how serious and threatening you are.\n")
+                anim_print("He drops the bag and knife and sprints with everything\n")
+                anim_print("to the trees to escape from your sight.\n")
                 anim_print("          \n")
                 ending.append("1")
 
@@ -412,14 +414,16 @@ def personOne():
             anim_print("You have chosen to go right\n")
             anim_print("          \n")
             personTwo()
+            
         elif capInput == "LEFT":
             anim_print("You have chosen to go left\n")
             anim_print("          \n")
             monsterTwo()
+
         elif capInput == "BACKWARD":
-            anim_print("That person would not like to see you return\n")
-            anim_print("back this way\n")
+            anim_print("There is nothing back that direction.\n")
             anim_print("Please choose another direction\n")
+
         elif capInput == "ESCAPE":
             anim_print("You have chosen to escape")
             quit()
