@@ -455,7 +455,21 @@ def personTwo():
             anim_print("Please choose a direction\n")
 
 def magician():
-    print("--Text to add--\n")
+    if ending == ["0","0"]:
+        #GOOD ENDING
+        anim_print("You have won! Congratulations!")
+        anim_print("          \n")
+        quit()
+        
+
+    elif ending == ["1","1"]:
+        #BAD ENDING
+        anim_print("Game Over")
+        quit()
+
+    else:
+        #DECENT ENDING
+
 
 def main():
     running = True
@@ -494,6 +508,7 @@ if __name__ == "__main__":
     # Input from user 
     global name
     name = input().upper()
+    #Setup & introduction
     anim_print(f"Hello there {name}!\n")
     anim_print("          \n")
     anim_print("You are a well known traveler and today you have decided to venture through\n")
