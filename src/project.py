@@ -57,7 +57,7 @@ def monsterOne():
     attitude= random.randrange(0,1)
     if attitude == 0:
         # Friendly response from Monster 1
-        anim_print(f"Monster1: Welcome to the woods {name}!\n")
+        anim_print(f"Monster1: Welcome to the woods!\n")
         anim_print("What are you doing so deep in these dangerous woods?\n")
         anim_print("          \n")
         responses = ["1","2"]
@@ -115,7 +115,7 @@ def monsterOne():
                 # Friendly response from Player
                 anim_print("The monster stares straight at you, almost as if\n")
                 anim_print("he was reading your mind.")
-                anim_print(f"Monster1: Move quickly through before I change my mind\n")
+                anim_print("Monster1: Move quickly through before I change my mind\n")
                 anim_print("          \n")
                 ending.append("0")
 
@@ -217,8 +217,7 @@ def monsterTwo():
             anim_print("I'm not looking for any trouble\n")
             anim_print("          \n")
 
-            anim_print("Option 2: None of your business monster!\n")
-            anim_print("Now move out of the way before I take your head as my prize.\n")
+            anim_print("Option 2: Move out of the way before I take your head as my prize!\n")
             anim_print("          \n")
     
             anim_print("How will you respond?\n")
