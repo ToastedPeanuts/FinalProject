@@ -558,21 +558,40 @@ def magician():
     if ending == ["0","0"]:
         #GOOD ENDING
         anim_print("You approach the cottage cautiously but also curiously.\n")
+
         anim_print("As you reach to knock on the door, it swings open by itself.\n")
         anim_print("You hear a come voice from inside\n")
+
         anim_print(f"'Please, come join me {name}. Make sure to take your shoes off please.\n")
+
         anim_print("You take your shoes off and shuffle into the home.\n")
+
         anim_print("As you proceed towards the living room, one of the chairs\n")
         anim_print("turns towards you, beckoning you to sit. And you ablige the chair.\n")
 
         anim_print("The other chair in the living room contains a middle aged man, with a pipe in his mouth\n")
+
         anim_print(f"'I've been watching you closely {name}.'\n")
         anim_print("'Ever since you entered this forest I have keenly observed\n")
         anim_print("to see what kind of person you are.'\n")
+
         anim_print("'I believe you are different, perhaps one of a kind.'\n")
         anim_print("If you would indulge me, I have a surprise of sorts for you.'\n")
+
         anim_print("You nod to the man, unsure of what surprises may be contained in\n")
         anim_print("a house of this size.\n")
+
+        anim_print("The man stands up from his chair and waddles over to a table\n")
+        anim_print("where a small leather bag sits atop it.\n")
+        anim_print("He swiftly grabs the bag and carries it back, gingerly handing it to you.\n")
+
+        anim_print("'This bag is now yours, take good care of it and all it contains.'\n")
+        anim_print("'It is getting late as well, I will see you out.'\n")
+        anim_print(f"The man guides you to the door and slowly closes it behind you. 'Good luck {name}!'\n")
+
+        anim_print("You open the bag to investigate the contents.\n")
+        anim_print("This is a magical bag! And one that contains mountains of gold!.\n")
+        anim_print("You smile from ear to ear\n")
         anim_print("          \n")
         quit()
 
@@ -583,7 +602,23 @@ def magician():
         
     else:
         #DECENT ENDING
-        anim_print("You are a human, good job")
+        anim_print("You approach the cottage cautiously but also curiously.\n")
+
+        anim_print("As you reach to knock on the door, it swings open by itself.\n")
+        anim_print("You hear a come voice from inside\n")
+
+        anim_print(f"'Please, come join me {name}. Make sure to take your shoes off please.\n")
+
+        anim_print("You take your shoes off and shuffle into the home.\n")
+
+        anim_print("As you proceed towards the living room, one of the chairs\n")
+        anim_print("turns towards you, beckoning you to sit. And you ablige the chair.\n")
+
+        anim_print("The other chair in the living room contains a middle aged man, with a pipe in his mouth\n")
+
+        anim_print(f"'I've been watching you closely {name}.'\n")
+        anim_print("'Ever since you entered this forest I have keenly observed\n")
+        anim_print("to see what kind of person you are.'\n")
         quit()
 
 
