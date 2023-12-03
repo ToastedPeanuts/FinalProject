@@ -39,10 +39,14 @@ def introScene():
             anim_print("making this path rather dark and weary\n")
             anim_print("          \n")
             monsterOne()
+
         elif capInput == "LEFT":
-            anim_print("You have chosen to go left\n")
+            anim_print("You walk along a well used path.\n")
+            anim_print("The sun shines bright, almost like the light is\n")
+            anim_print("guiding your way\n")
             anim_print("          \n")
             personOne()
+            
         elif capInput == "BACKWARD":
             anim_print("Adventurers must face their fears, choose a direction\n")
             anim_print("          \n")
