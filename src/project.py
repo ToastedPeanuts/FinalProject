@@ -5,6 +5,8 @@ import keyboard
 import os
 
 
+
+
 def anim_print(text):
     for character in text:
         print(character, end="", flush=True)
@@ -17,7 +19,21 @@ def exit_on_key(keyname):
     return callback
 
 def introScene():
-
+    anim_print("What is your name?\n")
+    # Input from user 
+    global name
+    name = input().capitalize()
+    #Setup & introduction
+    anim_print(f"Hello there {name}!\n")
+    anim_print("          \n")
+    anim_print("You are a well known traveler and today you have decided to venture through\n")
+    anim_print("the dark and mysterious woods.\n")
+    anim_print("There is a rumor that a magician resides there\n")
+    anim_print("and will reward you with riches if you find him!\n")
+    anim_print("          \n")
+    anim_print(f'Good luck on your quest {name}, stick to the path!\n')
+    anim_print("          \n")
+    anim_print("          \n")
     anim_print("You come to a grove in the middle of the forest\n")
     anim_print("          \n")
     anim_print("There are multiple paths you can take; Right, Left,\n")
@@ -633,14 +649,13 @@ def magician():
         anim_print("and return to me when you have strengthened your resolve.'\n")
         quit()
 
-
 def main():
     running = True
     while running:
         introScene()
 
-
 if __name__ == "__main__":
+    #pressing escape to stop text adventure
     keyboard.hook(exit_on_key('esc'))
     # setting up for the ending calculation
     global ending
@@ -649,19 +664,4 @@ if __name__ == "__main__":
     pygame.mixer.music.load('ForestSounds.mp3')
     pygame.mixer.music.play(loops=-1)
     pygame.mixer.music.set_volume(0.2)
-    anim_print("What is your name?\n")
-    # Input from user 
-    global name
-    name = input().capitalize()
-    #Setup & introduction
-    anim_print(f"Hello there {name}!\n")
-    anim_print("          \n")
-    anim_print("You are a well known traveler and today you have decided to venture through\n")
-    anim_print("the dark and mysterious woods.\n")
-    anim_print("There is a rumor that a magician resides there\n")
-    anim_print("and will reward you with riches if you find him!\n")
-    anim_print("          \n")
-    anim_print(f'Good luck on your quest {name}, stick to the path!\n')
-    anim_print("          \n")
-    anim_print("          \n")
     main()
