@@ -637,30 +637,8 @@ def magician():
 def main():
     running = True
     while running:
-    #pygame.init()
-    #pygame.display.set_caption('Background')
-    #resolution=(800,571)
-    #screen=pygame.display.set_mode(resolution)
-    #imp = pygame.image.load("DarkWoods.png")
-    #screen.blit(imp,(0,0))
-    #pygame.display.flip()
-    #text_font=pygame.font.SysFont("Arial", 30)
         introScene()
 
-
-
-    #running=True
-    #while running:
-        #draw_text(imp,"Hello there brave adventurer!", text_font, (255,255,255), 400,420)
-        #for event in pygame.event.get():
-            #if event.type==pygame.QUIT:
-               # running=False
-            #if event.type == pygame.KEYDOWN:
-                #pygame.KEYDOWN == pygame.K_ESCAPE
-                #running = False  
-        #Game Logic:
-        #Render and Display
-    #pygame.quit()
 
 if __name__ == "__main__":
     keyboard.hook(exit_on_key('esc'))
