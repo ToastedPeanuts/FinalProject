@@ -597,7 +597,9 @@ def magician():
 
     elif ending == ["1","1"]:
         #BAD ENDING
-        anim_print("Game Over")
+        anim_print("You approach the cottage cautiously but also curiously.\n")
+
+        anim_print("As you reach to knock on the door, it swings open by itself.\n")
         quit()
         
     else:
@@ -619,6 +621,12 @@ def magician():
         anim_print(f"'I've been watching you closely {name}.'\n")
         anim_print("'Ever since you entered this forest I have keenly observed\n")
         anim_print("to see what kind of person you are.'\n")
+
+        anim_print("'It seems as though you are a normal human, which is to be expected.'\n")
+        anim_print("'I can tell you would like to do the right thing\n")
+        anim_print("but certain situations seem to sway your moral compass.'\n")
+        anim_print("'I implore you to do some soul searching\n")
+        anim_print("and return to me when you have strengthened your resolve.'\n")
         quit()
 
 
