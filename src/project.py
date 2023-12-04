@@ -600,6 +600,10 @@ def magician():
         anim_print("You approach the cottage cautiously but also curiously.\n")
 
         anim_print("As you reach to knock on the door, it swings open by itself.\n")
+        anim_print("The cottage looks like it has been abandoned.\n")
+        anim_print("Furniture is covered with tarps and a thick\n")
+        anim_print("layer of dust covers the interior.\n")
+        anim_print("It seems as though all this was for nothing.\n")
         quit()
         
     else:
