@@ -4,9 +4,6 @@ import random
 import keyboard
 import os
 
-
-
-
 def anim_print(text):
     for character in text:
         print(character, end="", flush=True)
